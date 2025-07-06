@@ -312,18 +312,4 @@ always @ (posedge clk25) begin
 	VGA_B <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? 10'b1111111111 : 10'b0;
 end
 
-//Keyboard
-wire ready;
-wire [7:0] ascii_char;
-
-ps2decoder ps2decode(CLOCK_27, SW[0], PS2_CLK, PS2_DAT, ascii_char, ready);
-
-wire w_down, w1_down, s_down, s1_down, up_down, down_down;
-
-ps2_button_tracker ps2_bt(CLOCK_27, SW[0], ready, ascii_char, w1_down, s1_down, up_down, down_down);
-ps2_button_tracker ps2_bt2(CLOCK_27, SW[1], ready, ascii_char, w_down, s_down, up_down, down_down);
-
-
-
-
 endmodule
