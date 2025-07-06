@@ -1,8 +1,8 @@
 module debounce (CLOCK_50, noisy, debounced);
 
-parameter delay = 5000000; // so 10ms for a 50 MHz clock
+parameter delay = 500000; // so 10ms for a 50 MHz clock
 input CLOCK_50, noisy;
-output reg debounced;
+output reg debounced=1;
 
 reg [28:0] count; // 19 bits is enough to count to 500000
 reg changed;
