@@ -1,6 +1,5 @@
 module Project (
 	input CLOCK_50, CLOCK_27,
-	input PS2_CLK, PS2_DAT,
 	input [17:0] SW,
 	input [3:0] KEY,
 	output reg [1:0] LEDR,
