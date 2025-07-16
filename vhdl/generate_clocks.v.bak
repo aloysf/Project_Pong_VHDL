@@ -1,7 +1,6 @@
 module generate_clocks(
     input CLOCK_50,
-    output clk25, 
-	 output reg clk100Hz
+    output reg clk25, clk100Hz
 );
 
 reg clkdiv = 0;

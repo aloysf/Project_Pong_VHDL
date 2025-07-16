@@ -4,6 +4,7 @@
 ; Hierarchy         ; Input ; Constant Input ; Unused Input ; Floating Input ; Output ; Constant Output ; Unused Output ; Floating Output ; Bidir ; Constant Bidir ; Unused Bidir ; Input only Bidir ; Output only Bidir ;
 +-------------------+-------+----------------+--------------+----------------+--------+-----------------+---------------+-----------------+-------+----------------+--------------+------------------+-------------------+
 ; vga               ; 1     ; 1              ; 0            ; 1              ; 24     ; 1               ; 1             ; 1               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+; clk_gen           ; 1     ; 0              ; 0            ; 0              ; 2      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; score_2_tens_disp ; 4     ; 0              ; 0            ; 0              ; 7      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; score_2_ones_disp ; 4     ; 0              ; 0            ; 0              ; 7      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; score_1_tens_disp ; 4     ; 0              ; 0            ; 0              ; 7      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
