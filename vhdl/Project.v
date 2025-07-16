@@ -82,12 +82,11 @@ reg btn_1_up;
 reg btn_2_down;
 reg btn_2_up;
 
+//Debouncer for input buttons KEY
 debounce btn_deb_0(CLOCK_50, KEY[0], btn_2_down);
 debounce btn_deb_1(CLOCK_50, KEY[1], btn_2_up);
 debounce btn_deb_2(CLOCK_50, KEY[2], btn_1_down);
 debounce btn_deb_3(CLOCK_50, KEY[3], btn_1_up);
-
-
 
 //Scores
 integer score_1_ones = 0;
@@ -96,14 +95,20 @@ integer score_1_tens = 0;
 integer score_2_ones = 0;
 integer score_2_tens = 0;
 
-//Game state
+//Initialized state
+// 000: Initial state
+// 001: Game in progress
+// 010: Pause state
+// 100: Score state
 reg [2:0] state = 3'b000;
 integer counter_score = 0;
 wire reset = SW[17];
 
+// State machine
 always @ (posedge clk100Hz)
 begin
 if (reset) begin
+	// Reset
 		state <=3'b000;
 		score_1_ones <= 0;
 		score_1_tens <= 0;
@@ -119,15 +124,15 @@ end
 else
 begin
 case (state)
-	3'b000:
+	3'b000:	// Initial state
 		if ((~btn_1_up || ~btn_1_down) && (~btn_2_up || ~btn_2_down)) state <= 3'b100;
 
-	3'b001:
-	begin
+	3'b001:	// Game state
+	begin	
 		ball_x <= ball_x + dx;
 		ball_y <= ball_y + dy;
 		
-		//Checks if paddle 1 is within the bounds of the screen
+		// Checks if paddle 1 is within the bounds of the screen
 		if (paddle_1_y<=upper_lim_y-paddle_size_y+disp_shift && paddle_1_y>=lower_lim_y+disp_shift) begin
 			if (~btn_1_down) paddle_1_y <= paddle_1_y+paddle_dy;
 			if (~btn_1_up) paddle_1_y <= paddle_1_y-paddle_dy;
@@ -140,7 +145,8 @@ case (state)
 			if (~btn_1_down) paddle_1_y <= paddle_1_y+paddle_dy;
 			if (~btn_1_up) paddle_1_y <= paddle_1_y;
 		end
-		 //Same as above but for paddle 2
+
+		// Same as above but for paddle 2
 		if (paddle_2_y<=upper_lim_y-paddle_size_y+disp_shift && paddle_2_y>=lower_lim_y+disp_shift) begin
 			if (~btn_2_down) paddle_2_y <= paddle_2_y+paddle_dy;
 			if (~btn_2_up) paddle_2_y <= paddle_2_y-paddle_dy;
@@ -153,8 +159,6 @@ case (state)
 			if (~btn_2_down) paddle_2_y <= paddle_2_y+paddle_dy;
 			if (~btn_2_up) paddle_2_y <= paddle_2_y;
 		end
-		
-		
 		
 		// Ball movement
 		if (ball_y < lower_lim_y + disp_shift || ball_y > upper_lim_y-BALL_SIZE + disp_shift) begin 
@@ -222,13 +226,16 @@ case (state)
 				score_2_ones <=score_2_ones+1;
 		end
 		
+		// Pause state
+		// If SW[0] is pressed, go to pause state
+		// If SW[0] is released, go back to game state
 		if (SW[0]) state <= 3'b010;
 	end
 	
-	3'b010:
+	3'b010: // Pause state
 		if (~SW[0]) state <= 3'b001;
 		
-	3'b100:
+	3'b100: // Score state
 	begin
 		if (initial_x_dir[1]==0)
 		begin
