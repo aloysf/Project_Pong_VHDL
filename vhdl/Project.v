@@ -93,7 +93,9 @@ state_machine #(
 
 	score_1_ones, score_1_tens, score_2_ones, score_2_tens,
 	paddle_1_y, paddle_2_y,
-	ball_x, ball_y
+	ball_x, ball_y,
+	
+	color
 );
 
 
@@ -139,10 +141,16 @@ wire paddle_2 =	(x >= paddle_2_x) && (x < paddle_2_x + paddle_size_x) &&
 wire middle_line = (x>= mid_line_x) && (x < mid_line_x + mid_line_size_x) &&
 						 (y>= lower_lim_y) && (y < upper_lim_y);
 
+
+reg [8:0] color = {3'b011, 3'b101, 3'b110};
+wire [9:0] R = {color[8:6], 7'b1};
+wire [9:0] G = {color[5:3], 7'b1};
+wire [9:0] B = {color[2:0], 7'b1};
+
 always @ (posedge clk25) begin
-	VGA_R <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? 10'b1111111111 : 10'b0;
-	VGA_G <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? 10'b1111111111 : 10'b0;
-	VGA_B <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? 10'b1111111111 : 10'b0;
+	VGA_R <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? R : 10'b0;
+	VGA_G <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? G : 10'b0;
+	VGA_B <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? B : 10'b0;
 end
 
 endmodule

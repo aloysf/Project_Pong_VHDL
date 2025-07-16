@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project
-Wed Jul 16 17:59:58 2025
+Wed Jul 16 18:59:40 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -32,13 +32,14 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  24. Port Connectivity Checks: "hexdisplay:score_2_ones_disp"
  25. Port Connectivity Checks: "hexdisplay:score_1_tens_disp"
  26. Port Connectivity Checks: "hexdisplay:score_1_ones_disp"
- 27. Port Connectivity Checks: "state_machine:sm|random_number:rng_2"
- 28. Port Connectivity Checks: "state_machine:sm|random_number:rng_1"
- 29. Port Connectivity Checks: "state_machine:sm|random_number:rng"
- 30. Port Connectivity Checks: "state_machine:sm"
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 27. Port Connectivity Checks: "state_machine:sm|random_number:rng_3"
+ 28. Port Connectivity Checks: "state_machine:sm|random_number:rng_2"
+ 29. Port Connectivity Checks: "state_machine:sm|random_number:rng_1"
+ 30. Port Connectivity Checks: "state_machine:sm|random_number:rng"
+ 31. Port Connectivity Checks: "state_machine:sm"
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -64,15 +65,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 16 17:59:58 2025           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 16 18:59:40 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project                                         ;
 ; Top-level Entity Name              ; Project                                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,386                                           ;
-;     Total combinational functions  ; 1,353                                           ;
-;     Dedicated logic registers      ; 509                                             ;
-; Total registers                    ; 509                                             ;
+; Total logic elements               ; 1,362                                           ;
+;     Total combinational functions  ; 1,356                                           ;
+;     Dedicated logic registers      ; 479                                             ;
+; Total registers                    ; 479                                             ;
 ; Total pins                         ; 116                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -197,28 +198,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimated Total logic elements              ; 1,386                            ;
+; Estimated Total logic elements              ; 1,362                            ;
 ;                                             ;                                  ;
-; Total combinational functions               ; 1353                             ;
+; Total combinational functions               ; 1356                             ;
 ; Logic element usage by number of LUT inputs ;                                  ;
-;     -- 4 input functions                    ; 314                              ;
-;     -- 3 input functions                    ; 304                              ;
-;     -- <=2 input functions                  ; 735                              ;
+;     -- 4 input functions                    ; 312                              ;
+;     -- 3 input functions                    ; 313                              ;
+;     -- <=2 input functions                  ; 731                              ;
 ;                                             ;                                  ;
 ; Logic elements by mode                      ;                                  ;
-;     -- normal mode                          ; 558                              ;
-;     -- arithmetic mode                      ; 795                              ;
+;     -- normal mode                          ; 574                              ;
+;     -- arithmetic mode                      ; 782                              ;
 ;                                             ;                                  ;
-; Total registers                             ; 509                              ;
-;     -- Dedicated logic registers            ; 509                              ;
+; Total registers                             ; 479                              ;
+;     -- Dedicated logic registers            ; 479                              ;
 ;     -- I/O registers                        ; 0                                ;
 ;                                             ;                                  ;
 ; I/O pins                                    ; 116                              ;
 ; Embedded Multiplier 9-bit elements          ; 0                                ;
 ; Maximum fan-out node                        ; generate_clocks:clk_gen|clk100Hz ;
-; Maximum fan-out                             ; 279                              ;
-; Total fan-out                               ; 5447                             ;
-; Average fan-out                             ; 2.75                             ;
+; Maximum fan-out                             ; 260                              ;
+; Total fan-out                               ; 5330                             ;
+; Average fan-out                             ; 2.73                             ;
 +---------------------------------------------+----------------------------------+
 
 
@@ -227,7 +228,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
 ; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
-; |Project                          ; 1353 (206)        ; 509 (30)     ; 0           ; 0            ; 0       ; 0         ; 116  ; 0            ; |Project                                      ; work         ;
+; |Project                          ; 1356 (213)        ; 479 (12)     ; 0           ; 0            ; 0       ; 0         ; 116  ; 0            ; |Project                                      ; work         ;
 ;    |debounce:btn_deb_0|           ; 42 (42)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|debounce:btn_deb_0                   ; work         ;
 ;    |debounce:btn_deb_1|           ; 42 (42)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|debounce:btn_deb_1                   ; work         ;
 ;    |debounce:btn_deb_2|           ; 42 (42)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|debounce:btn_deb_2                   ; work         ;
@@ -237,11 +238,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |hexdisplay:score_1_tens_disp| ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|hexdisplay:score_1_tens_disp         ; work         ;
 ;    |hexdisplay:score_2_ones_disp| ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|hexdisplay:score_2_ones_disp         ; work         ;
 ;    |hexdisplay:score_2_tens_disp| ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|hexdisplay:score_2_tens_disp         ; work         ;
-;    |state_machine:sm|             ; 814 (772)         ; 295 (278)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|state_machine:sm                     ; work         ;
+;    |state_machine:sm|             ; 811 (751)         ; 283 (259)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|state_machine:sm                     ; work         ;
 ;       |random_number:rng_1|       ; 10 (10)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|state_machine:sm|random_number:rng_1 ; work         ;
 ;       |random_number:rng_2|       ; 10 (10)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|state_machine:sm|random_number:rng_2 ; work         ;
+;       |random_number:rng_3|       ; 18 (18)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|state_machine:sm|random_number:rng_3 ; work         ;
 ;       |random_number:rng|         ; 22 (22)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|state_machine:sm|random_number:rng   ; work         ;
-;    |xvga:vga|                     ; 52 (52)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|xvga:vga                             ; work         ;
+;    |xvga:vga|                     ; 51 (51)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project|xvga:vga                             ; work         ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -302,6 +304,34 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +------------------------------------------------------+------------------------------------------------------------+
 ; Register name                                        ; Reason for Removal                                         ;
 +------------------------------------------------------+------------------------------------------------------------+
+; VGA_B[1]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_B[2]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_B[3]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_B[4]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_B[5]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_B[6]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_G[1]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_G[2]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_G[3]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_G[4]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_G[5]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_G[6]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_R[1]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_R[2]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_R[3]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_R[4]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_R[5]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; VGA_R[6]~reg0                                        ; Stuck at GND due to stuck port data_in                     ;
+; state_machine:sm|random_number:rng_3|number[9]       ; Lost fanout                                                ;
+; state_machine:sm|random_number:rng_3|counter[0]      ; Merged with state_machine:sm|random_number:rng_3|number[0] ;
+; state_machine:sm|random_number:rng_3|counter[1]      ; Merged with state_machine:sm|random_number:rng_3|number[1] ;
+; state_machine:sm|random_number:rng_3|counter[2]      ; Merged with state_machine:sm|random_number:rng_3|number[2] ;
+; state_machine:sm|random_number:rng_3|counter[3]      ; Merged with state_machine:sm|random_number:rng_3|number[3] ;
+; state_machine:sm|random_number:rng_3|counter[4]      ; Merged with state_machine:sm|random_number:rng_3|number[4] ;
+; state_machine:sm|random_number:rng_3|counter[5]      ; Merged with state_machine:sm|random_number:rng_3|number[5] ;
+; state_machine:sm|random_number:rng_3|counter[6]      ; Merged with state_machine:sm|random_number:rng_3|number[6] ;
+; state_machine:sm|random_number:rng_3|counter[7]      ; Merged with state_machine:sm|random_number:rng_3|number[7] ;
+; state_machine:sm|random_number:rng_3|counter[8]      ; Merged with state_machine:sm|random_number:rng_3|number[8] ;
 ; state_machine:sm|random_number:rng_2|counter[1]      ; Merged with state_machine:sm|random_number:rng_2|number[1] ;
 ; state_machine:sm|random_number:rng_1|counter[1]      ; Merged with state_machine:sm|random_number:rng_1|number[1] ;
 ; state_machine:sm|random_number:rng|counter[0]        ; Merged with state_machine:sm|random_number:rng|number[0]   ;
@@ -316,17 +346,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; state_machine:sm|random_number:rng|counter[9]        ; Merged with state_machine:sm|random_number:rng|number[9]   ;
 ; state_machine:sm|dx[0]                               ; Merged with state_machine:sm|dy[0]                         ;
 ; state_machine:sm|random_number:rng|counter[28..31]   ; Stuck at GND due to stuck port data_in                     ;
+; state_machine:sm|random_number:rng_3|counter[28..31] ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng_1|counter[28..31] ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng_2|counter[28..31] ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng|counter[25..27]   ; Stuck at GND due to stuck port data_in                     ;
+; state_machine:sm|random_number:rng_3|counter[25..27] ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng_1|counter[25..27] ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng_2|counter[25..27] ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|paddle_dy[10..31]                   ; Lost fanout                                                ;
+; state_machine:sm|score_1_tens[4..31]                 ; Lost fanout                                                ;
 ; state_machine:sm|random_number:rng|number[9]         ; Stuck at GND due to stuck port data_in                     ;
+; state_machine:sm|random_number:rng_3|number[7,8]     ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng|counter[10..24]   ; Stuck at GND due to stuck port data_in                     ;
+; state_machine:sm|random_number:rng_3|counter[9..24]  ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng_1|counter[4..24]  ; Stuck at GND due to stuck port data_in                     ;
 ; state_machine:sm|random_number:rng_2|counter[4..24]  ; Stuck at GND due to stuck port data_in                     ;
-; Total Number of Removed Registers = 114              ;                                                            ;
+; Total Number of Removed Registers = 195              ;                                                            ;
 +------------------------------------------------------+------------------------------------------------------------+
 
 
@@ -383,6 +418,27 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                                  ;                           ; state_machine:sm|random_number:rng_2|counter[22],               ;
 ;                                                  ;                           ; state_machine:sm|random_number:rng_2|counter[23],               ;
 ;                                                  ;                           ; state_machine:sm|random_number:rng_2|counter[24]                ;
+; state_machine:sm|random_number:rng_3|counter[31] ; Stuck at GND              ; state_machine:sm|random_number:rng_3|counter[27],               ;
+;                                                  ; due to stuck port data_in ; state_machine:sm|random_number:rng_3|counter[26],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[25],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|number[7],                 ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|number[8],                 ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[9],                ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[10],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[11],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[12],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[13],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[14],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[15],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[16],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[17],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[18],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[19],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[20],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[21],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[22],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[23],               ;
+;                                                  ;                           ; state_machine:sm|random_number:rng_3|counter[24]                ;
 ; state_machine:sm|paddle_dy[31]                   ; Lost Fanouts              ; state_machine:sm|paddle_dy[30], state_machine:sm|paddle_dy[29], ;
 ;                                                  ;                           ; state_machine:sm|paddle_dy[28], state_machine:sm|paddle_dy[27], ;
 ;                                                  ;                           ; state_machine:sm|paddle_dy[26], state_machine:sm|paddle_dy[25], ;
@@ -421,12 +477,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 509   ;
-; Number of registers using Synchronous Clear  ; 319   ;
+; Total registers                              ; 479   ;
+; Number of registers using Synchronous Clear  ; 291   ;
 ; Number of registers using Synchronous Load   ; 31    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 398   ;
+; Number of registers using Clock Enable       ; 379   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -457,6 +513,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; state_machine:sm|ball_x[6]                      ; 6       ;
 ; state_machine:sm|ball_x[2]                      ; 7       ;
 ; state_machine:sm|ball_x[0]                      ; 5       ;
+; state_machine:sm|color[6]                       ; 2       ;
+; state_machine:sm|color[7]                       ; 2       ;
+; state_machine:sm|color[8]                       ; 2       ;
+; state_machine:sm|color[3]                       ; 2       ;
+; state_machine:sm|color[4]                       ; 2       ;
+; state_machine:sm|color[5]                       ; 2       ;
+; state_machine:sm|color[0]                       ; 2       ;
+; state_machine:sm|color[1]                       ; 2       ;
+; state_machine:sm|color[2]                       ; 2       ;
 ; debounce:btn_deb_1|debounced                    ; 7       ;
 ; debounce:btn_deb_0|debounced                    ; 4       ;
 ; state_machine:sm|paddle_dy[1]                   ; 5       ;
@@ -465,9 +530,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; debounce:btn_deb_2|debounced                    ; 4       ;
 ; state_machine:sm|dy[0]                          ; 12      ;
 ; state_machine:sm|random_number:rng|number[0]    ; 2       ;
+; state_machine:sm|random_number:rng_3|number[0]  ; 2       ;
 ; state_machine:sm|random_number:rng_2|counter[0] ; 1       ;
 ; state_machine:sm|random_number:rng_1|counter[0] ; 1       ;
-; Total number of inverted registers = 31         ;         ;
+; Total number of inverted registers = 41         ;         ;
 +-------------------------------------------------+---------+
 
 
@@ -476,25 +542,26 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_2|count[17]      ;
-; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_3|count[11]      ;
-; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_0|count[21]      ;
-; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_1|count[4]       ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Project|state_machine:sm|ball_x[9]        ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Project|state_machine:sm|ball_y[1]        ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_1_tens[28] ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_1_ones[3]  ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_2_tens[14] ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_2_ones[17] ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 62 LEs               ; 93 LEs                 ; Yes        ; |Project|state_machine:sm|dx[11]           ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_2|count[23]      ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_3|count[25]      ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_0|count[24]      ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |Project|debounce:btn_deb_1|count[17]      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Project|state_machine:sm|ball_x[3]        ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Project|state_machine:sm|ball_y[9]        ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_1_tens[24] ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |Project|state_machine:sm|score_1_ones[30] ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_2_tens[1]  ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |Project|state_machine:sm|score_2_ones[25] ;
+; 8:1                ; 31 bits   ; 155 LEs       ; 62 LEs               ; 93 LEs                 ; Yes        ; |Project|state_machine:sm|dx[15]           ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_1_y[2]    ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_2_y[2]    ;
-; 9:1                ; 31 bits   ; 186 LEs       ; 93 LEs               ; 93 LEs                 ; Yes        ; |Project|state_machine:sm|dy[24]           ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_2_y[0]    ;
+; 9:1                ; 31 bits   ; 186 LEs       ; 93 LEs               ; 93 LEs                 ; Yes        ; |Project|state_machine:sm|dy[18]           ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |Project|state_machine:sm|ball_x[0]        ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Project|state_machine:sm|ball_y[2]        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |Project|state_machine:sm|paddle_dy[0]     ;
-; 9:1                ; 6 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_1_y[5]    ;
-; 9:1                ; 6 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_2_y[5]    ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Project|state_machine:sm|ball_y[0]        ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |Project|state_machine:sm|color[6]         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |Project|state_machine:sm|paddle_dy[1]     ;
+; 9:1                ; 6 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_1_y[1]    ;
+; 9:1                ; 6 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |Project|state_machine:sm|paddle_2_y[4]    ;
 ; 4:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; No         ; |Project|state_machine:sm|paddle_dy        ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |Project|state_machine:sm|state            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
@@ -648,6 +715,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "state_machine:sm|random_number:rng_3"                                                                                                                                                     ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; limit       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; limit[6..5] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; limit[9..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; limit[4..3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; limit[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; limit[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "state_machine:sm|random_number:rng_2"                                                                                                                                                       ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -721,7 +802,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jul 16 17:59:49 2025
+    Info: Processing started: Wed Jul 16 18:59:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project -c Project
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file project.v
@@ -743,26 +824,28 @@ Warning (10230): Verilog HDL assignment warning at debounce.v(17): truncated val
 Warning (12125): Using design file state_machine.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: state_machine
 Info (12128): Elaborating entity "state_machine" for hierarchy "state_machine:sm"
-Warning (10230): Verilog HDL assignment warning at state_machine.v(24): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(25): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(56): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(57): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(79): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(80): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(81): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(82): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(94): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(95): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(99): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(100): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(104): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(107): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(113): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(114): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(26): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(27): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(60): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(61): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(89): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(90): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(91): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(92): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(105): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(106): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(110): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(111): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(115): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at state_machine.v(118): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(121): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(161): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at state_machine.v(176): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(124): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(125): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(129): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(132): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(154): truncated value with size 10 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(167): truncated value with size 10 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(174): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at state_machine.v(190): truncated value with size 32 to match size of target (10)
 Info (12128): Elaborating entity "random_number" for hierarchy "state_machine:sm|random_number:rng"
 Warning (10230): Verilog HDL assignment warning at random_number.v(13): truncated value with size 32 to match size of target (10)
 Warning (12125): Using design file hexdisplay.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -789,7 +872,7 @@ Warning (10230): Verilog HDL assignment warning at xvga.v(36): truncated value w
 Warning (10230): Verilog HDL assignment warning at xvga.v(38): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at xvga.v(40): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at xvga.v(42): truncated value with size 32 to match size of target (1)
-Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch hexdisplay:score_2_ones_disp|out_SEG[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state_machine:sm|score_2_ones[1]
 Warning (13012): Latch hexdisplay:score_2_ones_disp|out_SEG[1] has unsafe behavior
@@ -877,7 +960,25 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX3[4]" is stuck at GND
     Warning (13410): Pin "HEX3[5]" is stuck at GND
     Warning (13410): Pin "HEX3[6]" is stuck at GND
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "VGA_R[1]" is stuck at GND
+    Warning (13410): Pin "VGA_R[2]" is stuck at GND
+    Warning (13410): Pin "VGA_R[3]" is stuck at GND
+    Warning (13410): Pin "VGA_R[4]" is stuck at GND
+    Warning (13410): Pin "VGA_R[5]" is stuck at GND
+    Warning (13410): Pin "VGA_R[6]" is stuck at GND
+    Warning (13410): Pin "VGA_G[1]" is stuck at GND
+    Warning (13410): Pin "VGA_G[2]" is stuck at GND
+    Warning (13410): Pin "VGA_G[3]" is stuck at GND
+    Warning (13410): Pin "VGA_G[4]" is stuck at GND
+    Warning (13410): Pin "VGA_G[5]" is stuck at GND
+    Warning (13410): Pin "VGA_G[6]" is stuck at GND
+    Warning (13410): Pin "VGA_B[1]" is stuck at GND
+    Warning (13410): Pin "VGA_B[2]" is stuck at GND
+    Warning (13410): Pin "VGA_B[3]" is stuck at GND
+    Warning (13410): Pin "VGA_B[4]" is stuck at GND
+    Warning (13410): Pin "VGA_B[5]" is stuck at GND
+    Warning (13410): Pin "VGA_B[6]" is stuck at GND
+Info (17049): 51 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vhdl/output_files/Project.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -899,13 +1000,13 @@ Warning (21074): Design contains 17 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[14]"
     Warning (15610): No output dependent on input pin "SW[15]"
     Warning (15610): No output dependent on input pin "SW[16]"
-Info (21057): Implemented 1505 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1481 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 92 output pins
-    Info (21061): Implemented 1389 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 149 warnings
-    Info: Peak virtual memory: 4603 megabytes
-    Info: Processing ended: Wed Jul 16 17:59:58 2025
+    Info (21061): Implemented 1365 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 169 warnings
+    Info: Peak virtual memory: 4620 megabytes
+    Info: Processing ended: Wed Jul 16 18:59:40 2025
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:05
 

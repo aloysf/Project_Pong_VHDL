@@ -13,7 +13,9 @@ module state_machine #(parameter upper_lim_y=0, lower_lim_y=0, upper_lim_x=0, lo
     
     output integer score_1_ones, score_1_tens, score_2_ones, score_2_tens,
     output reg [9:0] paddle_1_y, paddle_2_y,
-    output reg [9:0] ball_x, ball_y
+    output reg [9:0] ball_x, ball_y,
+	 
+	 output reg [8:0] color
 );
 
 //BALL VARIABLES
@@ -39,6 +41,8 @@ random_number rng_1 (CLOCK_50, 8, initial_x_dir);
 random_number rng_2 (CLOCK_50, 10, initial_y_dir);
 
 //Ball collisions
+wire ball_hits_boundary =  (ball_y < lower_lim_y + disp_shift) || 
+										(ball_y > upper_lim_y-BALL_SIZE + disp_shift);
 wire ball_hits_paddle_1 =	(ball_x <= paddle_1_x + paddle_size_x ) &&
 										(ball_y >= paddle_1_y) &&
 										(ball_y <= paddle_1_y + paddle_size_y);
@@ -55,6 +59,12 @@ initial paddle_dy = initial_paddle_dy;
 
 initial paddle_1_y=initial_paddle_y;
 initial paddle_2_y=initial_paddle_y;
+
+
+// COLOR
+initial color = 9'b111111111;
+wire [9:0] color_add;
+random_number rng_3 (CLOCK_50, 100, color_add);
 
 
 //Initialized state
@@ -82,6 +92,7 @@ if (reset) begin
 		ball_y <= initial_ball_y;
 		dx <= initial_dx;
 		dy <= initial_dy;
+		color <= 9'b111111111;
 end
 else
 begin
@@ -123,7 +134,7 @@ case (state)
 		end
 		
 		// Ball movement
-		if (ball_y < lower_lim_y + disp_shift || ball_y > upper_lim_y-BALL_SIZE + disp_shift) begin 
+		if (ball_hits_boundary) begin 
 			if (hit_counter==0)	begin
 				dy <= -dy;
 				hit_counter=~hit_counter;
@@ -140,6 +151,7 @@ case (state)
 				else dy = dy+1;
 				paddle_dy <= paddle_dy+1;
 			end
+			color = color + color_add;
 		end
 		else if (ball_hits_paddle_2)  begin
 			if (hit_counter==0)	begin
@@ -151,7 +163,8 @@ case (state)
 				if (dy<0) dy=dy-1;
 				else dy = dy+1;
 				paddle_dy <= paddle_dy+1;
-			end			
+			end
+			color = color + color_add;			
 		end
 		else
 			hit_counter = 0;
@@ -166,8 +179,9 @@ case (state)
 				score_1_ones <= 0;
 				score_1_tens <= score_1_tens+1;
 				end
-			else if (score_1_tens == 9) begin
+			else if (score_1_tens == 9 && score_1_ones == 9) begin
 				score_1_tens <= 0;
+				score_1_ones <= 1;
 				end
 			else
 				score_1_ones <=score_1_ones+1;

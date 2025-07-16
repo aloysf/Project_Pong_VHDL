@@ -3,56 +3,56 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'generate_clocks:clk_gen|clkdiv'
-Slack : -7.296
-TNS   : -270.014
+Slack : -7.467
+TNS   : -149.539
 
 Type  : Slow Model Setup 'generate_clocks:clk_gen|clk100Hz'
-Slack : -6.146
-TNS   : -1252.392
+Slack : -6.099
+TNS   : -1148.429
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -3.131
-TNS   : -451.063
-
-Type  : Slow Model Setup 'state_machine:sm|score_1_ones[1]'
-Slack : -1.102
-TNS   : -7.528
+Slack : -3.119
+TNS   : -466.230
 
 Type  : Slow Model Setup 'state_machine:sm|score_2_tens[1]'
-Slack : -1.017
-TNS   : -6.955
+Slack : -1.158
+TNS   : -7.909
 
-Type  : Slow Model Setup 'state_machine:sm|score_1_tens[1]'
-Slack : -0.929
-TNS   : -5.219
+Type  : Slow Model Setup 'state_machine:sm|score_1_ones[1]'
+Slack : -1.144
+TNS   : -6.986
 
 Type  : Slow Model Setup 'state_machine:sm|score_2_ones[1]'
-Slack : -0.579
-TNS   : -3.868
+Slack : -0.621
+TNS   : -4.094
+
+Type  : Slow Model Setup 'state_machine:sm|score_1_tens[1]'
+Slack : -0.357
+TNS   : -2.294
 
 Type  : Slow Model Hold 'state_machine:sm|score_2_ones[1]'
-Slack : -3.170
-TNS   : -20.619
+Slack : -2.931
+TNS   : -19.066
+
+Type  : Slow Model Hold 'state_machine:sm|score_1_tens[1]'
+Slack : -2.638
+TNS   : -18.348
 
 Type  : Slow Model Hold 'generate_clocks:clk_gen|clk100Hz'
-Slack : -2.861
-TNS   : -160.008
-
-Type  : Slow Model Hold 'state_machine:sm|score_2_tens[1]'
-Slack : -2.771
-TNS   : -18.755
+Slack : -2.632
+TNS   : -104.246
 
 Type  : Slow Model Hold 'state_machine:sm|score_1_ones[1]'
-Slack : -2.616
-TNS   : -17.014
+Slack : -2.563
+TNS   : -16.881
 
 Type  : Slow Model Hold 'CLOCK_50'
 Slack : -2.558
-TNS   : -5.083
+TNS   : -5.100
 
-Type  : Slow Model Hold 'state_machine:sm|score_1_tens[1]'
-Slack : -2.537
-TNS   : -17.188
+Type  : Slow Model Hold 'state_machine:sm|score_2_tens[1]'
+Slack : -2.366
+TNS   : -16.235
 
 Type  : Slow Model Hold 'generate_clocks:clk_gen|clkdiv'
 Slack : 0.391
@@ -60,15 +60,15 @@ TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -176.380
+TNS   : -183.380
 
 Type  : Slow Model Minimum Pulse Width 'generate_clocks:clk_gen|clk100Hz'
 Slack : -0.500
-TNS   : -278.000
+TNS   : -259.000
 
 Type  : Slow Model Minimum Pulse Width 'generate_clocks:clk_gen|clkdiv'
 Slack : -0.500
-TNS   : -56.000
+TNS   : -38.000
 
 Type  : Slow Model Minimum Pulse Width 'state_machine:sm|score_1_ones[1]'
 Slack : 0.500
@@ -87,56 +87,56 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'generate_clocks:clk_gen|clkdiv'
-Slack : -2.715
-TNS   : -90.744
+Slack : -2.727
+TNS   : -46.597
 
 Type  : Fast Model Setup 'generate_clocks:clk_gen|clk100Hz'
-Slack : -2.490
-TNS   : -434.569
+Slack : -2.419
+TNS   : -393.843
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.946
-TNS   : -122.551
-
-Type  : Fast Model Setup 'state_machine:sm|score_1_ones[1]'
-Slack : -0.038
-TNS   : -0.210
+Slack : -0.940
+TNS   : -125.016
 
 Type  : Fast Model Setup 'state_machine:sm|score_2_tens[1]'
-Slack : -0.031
-TNS   : -0.145
+Slack : -0.037
+TNS   : -0.181
 
-Type  : Fast Model Setup 'state_machine:sm|score_1_tens[1]'
-Slack : 0.022
-TNS   : 0.000
+Type  : Fast Model Setup 'state_machine:sm|score_1_ones[1]'
+Slack : -0.035
+TNS   : -0.053
 
 Type  : Fast Model Setup 'state_machine:sm|score_2_ones[1]'
-Slack : 0.247
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast Model Setup 'state_machine:sm|score_1_tens[1]'
+Slack : 0.382
 TNS   : 0.000
 
 Type  : Fast Model Hold 'state_machine:sm|score_2_ones[1]'
-Slack : -1.799
-TNS   : -11.870
+Slack : -1.701
+TNS   : -11.244
 
 Type  : Fast Model Hold 'generate_clocks:clk_gen|clk100Hz'
-Slack : -1.760
-TNS   : -124.966
+Slack : -1.608
+TNS   : -83.809
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.598
-TNS   : -3.166
-
-Type  : Fast Model Hold 'state_machine:sm|score_2_tens[1]'
-Slack : -1.552
-TNS   : -10.535
-
-Type  : Fast Model Hold 'state_machine:sm|score_1_ones[1]'
-Slack : -1.486
-TNS   : -9.821
+Slack : -1.599
+TNS   : -3.184
 
 Type  : Fast Model Hold 'state_machine:sm|score_1_tens[1]'
-Slack : -1.458
-TNS   : -9.884
+Slack : -1.560
+TNS   : -10.872
+
+Type  : Fast Model Hold 'state_machine:sm|score_1_ones[1]'
+Slack : -1.455
+TNS   : -9.737
+
+Type  : Fast Model Hold 'state_machine:sm|score_2_tens[1]'
+Slack : -1.368
+TNS   : -9.397
 
 Type  : Fast Model Hold 'generate_clocks:clk_gen|clkdiv'
 Slack : 0.215
@@ -144,15 +144,15 @@ TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -176.380
+TNS   : -183.380
 
 Type  : Fast Model Minimum Pulse Width 'generate_clocks:clk_gen|clk100Hz'
 Slack : -0.500
-TNS   : -278.000
+TNS   : -259.000
 
 Type  : Fast Model Minimum Pulse Width 'generate_clocks:clk_gen|clkdiv'
 Slack : -0.500
-TNS   : -56.000
+TNS   : -38.000
 
 Type  : Fast Model Minimum Pulse Width 'state_machine:sm|score_1_ones[1]'
 Slack : 0.500

@@ -1,5 +1,5 @@
 Fitter report for Project
-Wed Jul 16 18:00:14 2025
+Wed Jul 16 18:59:57 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -65,17 +65,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jul 16 18:00:14 2025           ;
+; Fitter Status                      ; Successful - Wed Jul 16 18:59:56 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project                                         ;
 ; Top-level Entity Name              ; Project                                         ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 1,373 / 33,216 ( 4 % )                          ;
-;     Total combinational functions  ; 1,353 / 33,216 ( 4 % )                          ;
-;     Dedicated logic registers      ; 509 / 33,216 ( 2 % )                            ;
-; Total registers                    ; 509                                             ;
+; Total logic elements               ; 1,358 / 33,216 ( 4 % )                          ;
+;     Total combinational functions  ; 1,356 / 33,216 ( 4 % )                          ;
+;     Dedicated logic registers      ; 479 / 33,216 ( 1 % )                            ;
+; Total registers                    ; 479                                             ;
 ; Total pins                         ; 116 / 475 ( 24 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
@@ -468,8 +468,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 1989 ( 0.00 % )    ;
-;     -- Achieved     ; 0 / 1989 ( 0.00 % )    ;
+;     -- Requested    ; 0 / 1962 ( 0.00 % )    ;
+;     -- Achieved     ; 0 / 1962 ( 0.00 % )    ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -492,7 +492,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 1986    ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 1959    ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -508,26 +508,26 @@ The pin-out file can be found in H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vh
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 1,373 / 33,216 ( 4 % ) ;
-;     -- Combinational with no register       ; 864                    ;
-;     -- Register only                        ; 20                     ;
-;     -- Combinational with a register        ; 489                    ;
+; Total logic elements                        ; 1,358 / 33,216 ( 4 % ) ;
+;     -- Combinational with no register       ; 879                    ;
+;     -- Register only                        ; 2                      ;
+;     -- Combinational with a register        ; 477                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 314                    ;
-;     -- 3 input functions                    ; 304                    ;
-;     -- <=2 input functions                  ; 735                    ;
-;     -- Register only                        ; 20                     ;
+;     -- 4 input functions                    ; 312                    ;
+;     -- 3 input functions                    ; 313                    ;
+;     -- <=2 input functions                  ; 731                    ;
+;     -- Register only                        ; 2                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 558                    ;
-;     -- arithmetic mode                      ; 795                    ;
+;     -- normal mode                          ; 574                    ;
+;     -- arithmetic mode                      ; 782                    ;
 ;                                             ;                        ;
-; Total registers*                            ; 509 / 34,593 ( 1 % )   ;
-;     -- Dedicated logic registers            ; 509 / 33,216 ( 2 % )   ;
+; Total registers*                            ; 479 / 34,593 ( 1 % )   ;
+;     -- Dedicated logic registers            ; 479 / 33,216 ( 1 % )   ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 114 / 2,076 ( 5 % )    ;
+; Total LABs:  partially or completely used   ; 104 / 2,076 ( 5 % )    ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 116 / 475 ( 24 % )     ;
 ;     -- Clock pins                           ; 8 / 8 ( 100 % )        ;
@@ -542,12 +542,12 @@ The pin-out file can be found in H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vh
 ; JTAGs                                       ; 0 / 1 ( 0 % )          ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%           ;
-; Peak interconnect usage (total/H/V)         ; 7% / 6% / 8%           ;
-; Maximum fan-out                             ; 270                    ;
-; Highest non-global fan-out                  ; 130                    ;
-; Total fan-out                               ; 5468                   ;
-; Average fan-out                             ; 2.73                   ;
+; Average interconnect usage (total/H/V)      ; 0% / 0% / 1%           ;
+; Peak interconnect usage (total/H/V)         ; 9% / 8% / 9%           ;
+; Maximum fan-out                             ; 251                    ;
+; Highest non-global fan-out                  ; 140                    ;
+; Total fan-out                               ; 5338                   ;
+; Average fan-out                             ; 2.72                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -560,25 +560,25 @@ The pin-out file can be found in H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vh
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 1373 / 33216 ( 4 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 864                  ; 0                              ;
-;     -- Register only                        ; 20                   ; 0                              ;
-;     -- Combinational with a register        ; 489                  ; 0                              ;
+; Total logic elements                        ; 1358 / 33216 ( 4 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 879                  ; 0                              ;
+;     -- Register only                        ; 2                    ; 0                              ;
+;     -- Combinational with a register        ; 477                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 314                  ; 0                              ;
-;     -- 3 input functions                    ; 304                  ; 0                              ;
-;     -- <=2 input functions                  ; 735                  ; 0                              ;
-;     -- Register only                        ; 20                   ; 0                              ;
+;     -- 4 input functions                    ; 312                  ; 0                              ;
+;     -- 3 input functions                    ; 313                  ; 0                              ;
+;     -- <=2 input functions                  ; 731                  ; 0                              ;
+;     -- Register only                        ; 2                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 558                  ; 0                              ;
-;     -- arithmetic mode                      ; 795                  ; 0                              ;
+;     -- normal mode                          ; 574                  ; 0                              ;
+;     -- arithmetic mode                      ; 782                  ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 509                  ; 0                              ;
-;     -- Dedicated logic registers            ; 509 / 33216 ( 2 % )  ; 0 / 33216 ( 0 % )              ;
+; Total registers                             ; 479                  ; 0                              ;
+;     -- Dedicated logic registers            ; 479 / 33216 ( 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 114 / 2076 ( 5 % )   ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 104 / 2076 ( 5 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 116                  ; 0                              ;
@@ -594,8 +594,8 @@ The pin-out file can be found in H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vh
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 5468                 ; 0                              ;
-;     -- Registered Connections               ; 1724                 ; 0                              ;
+;     -- Total Connections                    ; 5338                 ; 0                              ;
+;     -- Registered Connections               ; 1683                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -633,7 +633,7 @@ The pin-out file can be found in H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vh
 ; KEY[1]   ; N23   ; 5        ; 65           ; 20           ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; KEY[2]   ; P23   ; 6        ; 65           ; 18           ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; KEY[3]   ; W26   ; 6        ; 65           ; 10           ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[0]    ; N25   ; 5        ; 65           ; 19           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[0]    ; N25   ; 5        ; 65           ; 19           ; 0           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[10]   ; N1    ; 2        ; 0            ; 18           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[11]   ; P1    ; 1        ; 0            ; 18           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[12]   ; P2    ; 1        ; 0            ; 18           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -641,7 +641,7 @@ The pin-out file can be found in H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vh
 ; SW[14]   ; U3    ; 1        ; 0            ; 12           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[15]   ; U4    ; 1        ; 0            ; 12           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[16]   ; V1    ; 1        ; 0            ; 12           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[17]   ; V2    ; 1        ; 0            ; 12           ; 3           ; 130                   ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[17]   ; V2    ; 1        ; 0            ; 12           ; 3           ; 140                   ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[1]    ; N26   ; 5        ; 65           ; 19           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[2]    ; P25   ; 6        ; 65           ; 19           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[3]    ; AE14  ; 7        ; 33           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -1493,21 +1493,22 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+--------------+
 ; Compilation Hierarchy Node        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                           ; Library Name ;
 +-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+--------------+
-; |Project                          ; 1373 (222)  ; 509 (30)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 116  ; 0            ; 864 (190)    ; 20 (17)           ; 489 (16)         ; |Project                                      ; work         ;
+; |Project                          ; 1358 (214)  ; 479 (12)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 116  ; 0            ; 879 (201)    ; 2 (0)             ; 477 (12)         ; |Project                                      ; work         ;
 ;    |debounce:btn_deb_0|           ; 42 (42)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 31 (31)          ; |Project|debounce:btn_deb_0                   ; work         ;
 ;    |debounce:btn_deb_1|           ; 43 (43)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 1 (1)             ; 30 (30)          ; |Project|debounce:btn_deb_1                   ; work         ;
-;    |debounce:btn_deb_2|           ; 43 (43)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 1 (1)             ; 30 (30)          ; |Project|debounce:btn_deb_2                   ; work         ;
-;    |debounce:btn_deb_3|           ; 43 (43)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 1 (1)             ; 30 (30)          ; |Project|debounce:btn_deb_3                   ; work         ;
+;    |debounce:btn_deb_2|           ; 42 (42)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 31 (31)          ; |Project|debounce:btn_deb_2                   ; work         ;
+;    |debounce:btn_deb_3|           ; 42 (42)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 31 (31)          ; |Project|debounce:btn_deb_3                   ; work         ;
 ;    |generate_clocks:clk_gen|      ; 53 (53)     ; 34 (34)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 34 (34)          ; |Project|generate_clocks:clk_gen              ; work         ;
 ;    |hexdisplay:score_1_ones_disp| ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 0 (0)            ; |Project|hexdisplay:score_1_ones_disp         ; work         ;
-;    |hexdisplay:score_1_tens_disp| ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 1 (1)            ; |Project|hexdisplay:score_1_tens_disp         ; work         ;
+;    |hexdisplay:score_1_tens_disp| ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 0 (0)            ; |Project|hexdisplay:score_1_tens_disp         ; work         ;
 ;    |hexdisplay:score_2_ones_disp| ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 0 (0)            ; |Project|hexdisplay:score_2_ones_disp         ; work         ;
 ;    |hexdisplay:score_2_tens_disp| ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 0 (0)            ; |Project|hexdisplay:score_2_tens_disp         ; work         ;
-;    |state_machine:sm|             ; 817 (775)   ; 295 (278)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 522 (497)    ; 0 (0)             ; 295 (278)        ; |Project|state_machine:sm                     ; work         ;
+;    |state_machine:sm|             ; 812 (752)   ; 283 (259)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 529 (493)    ; 1 (1)             ; 282 (258)        ; |Project|state_machine:sm                     ; work         ;
 ;       |random_number:rng_1|       ; 10 (10)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 4 (4)            ; |Project|state_machine:sm|random_number:rng_1 ; work         ;
 ;       |random_number:rng_2|       ; 10 (10)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 4 (4)            ; |Project|state_machine:sm|random_number:rng_2 ; work         ;
+;       |random_number:rng_3|       ; 18 (18)     ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 7 (7)            ; |Project|state_machine:sm|random_number:rng_3 ; work         ;
 ;       |random_number:rng|         ; 22 (22)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 9 (9)            ; |Project|state_machine:sm|random_number:rng   ; work         ;
-;    |xvga:vga|                     ; 53 (53)     ; 26 (26)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (27)      ; 0 (0)             ; 26 (26)          ; |Project|xvga:vga                             ; work         ;
+;    |xvga:vga|                     ; 52 (52)     ; 26 (26)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 27 (27)          ; |Project|xvga:vga                             ; work         ;
 +-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1660,136 +1661,146 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[16]                                      ;                   ;         ;
 ; CLOCK_50                                    ;                   ;         ;
 ; SW[17]                                      ;                   ;         ;
-;      - state_machine:sm|ball_y[1]           ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y[5]           ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y[6]           ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y[7]           ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y[9]           ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y[2]       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y[8]       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y[0]       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y[2]       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y[8]       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y[0]       ; 1                 ; 6       ;
-;      - state_machine:sm|dx[1]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[2]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[3]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[4]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[5]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[6]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[7]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[8]               ; 1                 ; 6       ;
-;      - state_machine:sm|dx[9]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[1]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[2]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[3]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[4]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[5]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[6]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[7]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[8]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[9]               ; 1                 ; 6       ;
-;      - state_machine:sm|dy[31]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[30]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[29]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[28]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[27]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[26]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[25]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[24]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[23]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[22]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[21]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[20]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[19]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[18]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[17]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[16]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[15]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[14]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[13]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[12]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[11]              ; 1                 ; 6       ;
-;      - state_machine:sm|dy[10]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[10]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[11]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[12]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[13]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[14]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[15]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[16]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[17]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[18]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[19]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[20]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[21]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[22]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[23]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[24]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[25]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[26]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[27]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[28]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[29]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[30]              ; 1                 ; 6       ;
-;      - state_machine:sm|dx[31]              ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y[9]       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y[9]       ; 1                 ; 6       ;
-;      - state_machine:sm|score_2_ones[17]~34 ; 1                 ; 6       ;
-;      - state_machine:sm|score_2_ones[17]~35 ; 1                 ; 6       ;
-;      - state_machine:sm|score_2_tens[14]~34 ; 1                 ; 6       ;
-;      - state_machine:sm|score_2_tens[14]~35 ; 1                 ; 6       ;
-;      - state_machine:sm|score_1_ones[3]~34  ; 1                 ; 6       ;
-;      - state_machine:sm|score_1_ones[3]~36  ; 1                 ; 6       ;
-;      - state_machine:sm|score_1_tens[28]~34 ; 1                 ; 6       ;
-;      - state_machine:sm|score_1_tens[28]~35 ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[9]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[8]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[7]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[6]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[5]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[4]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[3]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[2]        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y[9]~3     ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y[5]~8     ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y~9        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y~10       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y~11       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y~12       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y~13       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_2_y~15       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y[5]~7     ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y~8        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y~9        ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y~10       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y~11       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y~12       ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_1_y~14       ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y~0            ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y~1            ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y~2            ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y~3            ; 1                 ; 6       ;
-;      - state_machine:sm|ball_y~4            ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~20             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~21             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~22             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~23             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~24             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~25             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~26             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~27             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~28             ; 1                 ; 6       ;
-;      - state_machine:sm|Add2~29             ; 1                 ; 6       ;
-;      - state_machine:sm|state~15            ; 1                 ; 6       ;
-;      - state_machine:sm|state~17            ; 1                 ; 6       ;
-;      - state_machine:sm|paddle_dy[0]~2      ; 1                 ; 6       ;
-;      - state_machine:sm|state~18            ; 1                 ; 6       ;
-;      - state_machine:sm|dx[11]~0            ; 1                 ; 6       ;
-;      - state_machine:sm|dy~23               ; 1                 ; 6       ;
-;      - state_machine:sm|state.000~0         ; 1                 ; 6       ;
-;      - state_machine:sm|state~20            ; 1                 ; 6       ;
-;      - state_machine:sm|counter_score[31]~0 ; 1                 ; 6       ;
+;      - state_machine:sm|ball_y[1]           ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y[5]           ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y[6]           ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y[7]           ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y[9]           ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y[2]       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y[8]       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y[0]       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y[2]       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y[8]       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y[0]       ; 0                 ; 6       ;
+;      - state_machine:sm|dx[1]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[2]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[3]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[4]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[5]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[6]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[7]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[8]               ; 0                 ; 6       ;
+;      - state_machine:sm|dx[9]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[1]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[2]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[3]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[4]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[5]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[6]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[7]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[8]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[9]               ; 0                 ; 6       ;
+;      - state_machine:sm|dy[31]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[30]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[29]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[28]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[27]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[26]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[25]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[24]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[23]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[22]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[21]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[20]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[19]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[18]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[17]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[16]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[15]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[14]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[13]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[12]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[11]              ; 0                 ; 6       ;
+;      - state_machine:sm|dy[10]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[10]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[11]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[12]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[13]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[14]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[15]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[16]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[17]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[18]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[19]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[20]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[21]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[22]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[23]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[24]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[25]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[26]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[27]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[28]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[29]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[30]              ; 0                 ; 6       ;
+;      - state_machine:sm|dx[31]              ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y[9]       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y[9]       ; 0                 ; 6       ;
+;      - state_machine:sm|score_2_ones[25]~34 ; 0                 ; 6       ;
+;      - state_machine:sm|score_2_ones[25]~36 ; 0                 ; 6       ;
+;      - state_machine:sm|score_2_tens[1]~34  ; 0                 ; 6       ;
+;      - state_machine:sm|score_2_tens[1]~35  ; 0                 ; 6       ;
+;      - state_machine:sm|score_1_ones[30]~34 ; 0                 ; 6       ;
+;      - state_machine:sm|score_1_ones[30]~35 ; 0                 ; 6       ;
+;      - state_machine:sm|score_1_tens[24]~6  ; 0                 ; 6       ;
+;      - state_machine:sm|score_1_tens[24]~7  ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[9]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[8]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[7]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[6]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[5]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[4]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[3]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[2]        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y[9]~3     ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y[4]~8     ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y~9        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y~10       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y~11       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y~12       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y~13       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_2_y~15       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y[1]~7     ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y~8        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y~9        ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y~10       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y~11       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y~12       ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_1_y~14       ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y~0            ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y~1            ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y~2            ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y~3            ; 0                 ; 6       ;
+;      - state_machine:sm|ball_y~4            ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~20             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~21             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~22             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~23             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~24             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~25             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~26             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~27             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~28             ; 0                 ; 6       ;
+;      - state_machine:sm|Add2~29             ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~14            ; 0                 ; 6       ;
+;      - state_machine:sm|color[6]~1          ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~17            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~20            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~21            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~22            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~23            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~24            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~25            ; 0                 ; 6       ;
+;      - state_machine:sm|Add15~26            ; 0                 ; 6       ;
+;      - state_machine:sm|state~17            ; 0                 ; 6       ;
+;      - state_machine:sm|state~18            ; 0                 ; 6       ;
+;      - state_machine:sm|paddle_dy[0]~2      ; 0                 ; 6       ;
+;      - state_machine:sm|state~19            ; 0                 ; 6       ;
+;      - state_machine:sm|dx[15]~0            ; 0                 ; 6       ;
+;      - state_machine:sm|dy~22               ; 0                 ; 6       ;
+;      - state_machine:sm|state~21            ; 0                 ; 6       ;
+;      - state_machine:sm|counter_score[31]~0 ; 0                 ; 6       ;
+;      - state_machine:sm|state.000~0         ; 0                 ; 6       ;
 ; SW[0]                                       ;                   ;         ;
 ; KEY[1]                                      ;                   ;         ;
 ;      - debounce:btn_deb_1|debounced~0       ; 0                 ; 6       ;
@@ -1800,13 +1811,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - debounce:btn_deb_0|debounced~0       ; 1                 ; 6       ;
 ;      - debounce:btn_deb_0|always0~0         ; 1                 ; 6       ;
 ; KEY[3]                                      ;                   ;         ;
-;      - debounce:btn_deb_3|debounced~0       ; 1                 ; 6       ;
-;      - debounce:btn_deb_3|always0~0         ; 1                 ; 6       ;
-;      - debounce:btn_deb_3|changed~feeder    ; 1                 ; 6       ;
+;      - debounce:btn_deb_3|changed           ; 0                 ; 6       ;
+;      - debounce:btn_deb_3|debounced~0       ; 0                 ; 6       ;
+;      - debounce:btn_deb_3|always0~0         ; 0                 ; 6       ;
 ; KEY[2]                                      ;                   ;         ;
+;      - debounce:btn_deb_2|changed           ; 0                 ; 6       ;
 ;      - debounce:btn_deb_2|debounced~0       ; 0                 ; 6       ;
 ;      - debounce:btn_deb_2|always0~0         ; 0                 ; 6       ;
-;      - debounce:btn_deb_2|changed~feeder    ; 0                 ; 6       ;
 +---------------------------------------------+-------------------+---------+
 
 
@@ -1815,40 +1826,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                 ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                             ; PIN_N2             ; 175     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; SW[17]                               ; PIN_V2             ; 130     ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_0|always0~0         ; LCCOMB_X35_Y21_N16 ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_0|debounced~11      ; LCCOMB_X35_Y21_N0  ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_1|always0~0         ; LCCOMB_X30_Y34_N28 ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_1|debounced~11      ; LCCOMB_X30_Y34_N6  ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_2|always0~0         ; LCCOMB_X19_Y21_N16 ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_2|debounced~11      ; LCCOMB_X18_Y21_N2  ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_3|always0~0         ; LCCOMB_X32_Y20_N0  ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; debounce:btn_deb_3|debounced~11      ; LCCOMB_X32_Y20_N30 ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; generate_clocks:clk_gen|clk100Hz     ; LCFF_X19_Y8_N9     ; 10      ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; generate_clocks:clk_gen|clk100Hz     ; LCFF_X19_Y8_N9     ; 270     ; Clock                     ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-; generate_clocks:clk_gen|clkdiv       ; LCFF_X30_Y35_N1    ; 56      ; Clock                     ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; hexdisplay:score_1_ones_disp|Mux7~0  ; LCCOMB_X8_Y22_N12  ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; hexdisplay:score_1_tens_disp|Mux7~0  ; LCCOMB_X11_Y21_N18 ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; hexdisplay:score_2_ones_disp|Mux7~0  ; LCCOMB_X18_Y18_N20 ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; hexdisplay:score_2_tens_disp|Mux7~0  ; LCCOMB_X14_Y18_N26 ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; state_machine:sm|counter_score[31]~0 ; LCCOMB_X28_Y20_N16 ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|dx[11]~1            ; LCCOMB_X29_Y23_N14 ; 31      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|dy[24]~5            ; LCCOMB_X29_Y23_N28 ; 31      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|paddle_1_y[5]~7     ; LCCOMB_X27_Y29_N22 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|paddle_2_y[5]~8     ; LCCOMB_X35_Y24_N24 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|paddle_2_y[9]~3     ; LCCOMB_X32_Y28_N18 ; 22      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|paddle_dy[0]~3      ; LCCOMB_X31_Y23_N0  ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_1_ones[3]~34  ; LCCOMB_X10_Y22_N8  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_1_ones[3]~36  ; LCCOMB_X10_Y22_N26 ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_1_tens[28]~34 ; LCCOMB_X10_Y22_N16 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_1_tens[28]~35 ; LCCOMB_X10_Y22_N10 ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_2_ones[17]~34 ; LCCOMB_X16_Y18_N4  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_2_ones[17]~35 ; LCCOMB_X16_Y18_N16 ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_2_tens[14]~34 ; LCCOMB_X16_Y18_N6  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|score_2_tens[14]~35 ; LCCOMB_X16_Y18_N8  ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; state_machine:sm|state.100           ; LCFF_X33_Y20_N3    ; 38      ; Sync. load                ; no     ; --                   ; --               ; --                        ;
-; xvga:vga|Equal3~1                    ; LCCOMB_X35_Y26_N14 ; 19      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                             ; PIN_N2             ; 182     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; SW[17]                               ; PIN_V2             ; 140     ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_0|always0~0         ; LCCOMB_X25_Y34_N28 ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_0|debounced~11      ; LCCOMB_X25_Y34_N0  ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_1|always0~0         ; LCCOMB_X34_Y18_N28 ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_1|debounced~11      ; LCCOMB_X34_Y18_N2  ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_2|always0~0         ; LCCOMB_X31_Y35_N2  ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_2|debounced~11      ; LCCOMB_X31_Y35_N16 ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_3|always0~0         ; LCCOMB_X24_Y31_N28 ; 29      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; debounce:btn_deb_3|debounced~11      ; LCCOMB_X25_Y31_N2  ; 29      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; generate_clocks:clk_gen|clk100Hz     ; LCFF_X12_Y20_N3    ; 10      ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; generate_clocks:clk_gen|clk100Hz     ; LCFF_X12_Y20_N3    ; 251     ; Clock                     ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; generate_clocks:clk_gen|clkdiv       ; LCFF_X31_Y35_N13   ; 38      ; Clock                     ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; hexdisplay:score_1_ones_disp|Mux7~0  ; LCCOMB_X8_Y20_N18  ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; hexdisplay:score_1_tens_disp|Mux7~0  ; LCCOMB_X11_Y20_N22 ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; hexdisplay:score_2_ones_disp|Mux7~0  ; LCCOMB_X8_Y13_N0   ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK14           ; --                        ;
+; hexdisplay:score_2_tens_disp|Mux7~0  ; LCCOMB_X4_Y14_N26  ; 7       ; Latch enable              ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; state_machine:sm|color[6]~1          ; LCCOMB_X28_Y21_N8  ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|counter_score[31]~0 ; LCCOMB_X30_Y20_N0  ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|dx[15]~1            ; LCCOMB_X34_Y21_N22 ; 31      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|dy[18]~4            ; LCCOMB_X30_Y21_N26 ; 31      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|paddle_1_y[1]~7     ; LCCOMB_X30_Y22_N30 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|paddle_2_y[4]~8     ; LCCOMB_X27_Y21_N26 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|paddle_2_y[9]~3     ; LCCOMB_X31_Y23_N8  ; 22      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|paddle_dy[0]~3      ; LCCOMB_X32_Y21_N28 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_1_ones[30]~34 ; LCCOMB_X10_Y20_N4  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_1_ones[30]~35 ; LCCOMB_X31_Y23_N2  ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_1_tens[24]~6  ; LCCOMB_X11_Y20_N30 ; 4       ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_1_tens[24]~7  ; LCCOMB_X11_Y20_N24 ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_2_ones[25]~34 ; LCCOMB_X6_Y13_N16  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_2_ones[25]~36 ; LCCOMB_X6_Y13_N4   ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_2_tens[1]~34  ; LCCOMB_X6_Y13_N6   ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|score_2_tens[1]~35  ; LCCOMB_X6_Y13_N8   ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; state_machine:sm|state.100           ; LCFF_X31_Y24_N13   ; 38      ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; xvga:vga|Equal3~1                    ; LCCOMB_X25_Y21_N26 ; 13      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1857,13 +1869,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
 ; Name                                ; Location           ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
-; CLOCK_50                            ; PIN_N2             ; 175     ; Global Clock         ; GCLK2            ; --                        ;
-; generate_clocks:clk_gen|clk100Hz    ; LCFF_X19_Y8_N9     ; 270     ; Global Clock         ; GCLK14           ; --                        ;
-; generate_clocks:clk_gen|clkdiv      ; LCFF_X30_Y35_N1    ; 56      ; Global Clock         ; GCLK8            ; --                        ;
-; hexdisplay:score_1_ones_disp|Mux7~0 ; LCCOMB_X8_Y22_N12  ; 7       ; Global Clock         ; GCLK3            ; --                        ;
-; hexdisplay:score_1_tens_disp|Mux7~0 ; LCCOMB_X11_Y21_N18 ; 7       ; Global Clock         ; GCLK0            ; --                        ;
-; hexdisplay:score_2_ones_disp|Mux7~0 ; LCCOMB_X18_Y18_N20 ; 7       ; Global Clock         ; GCLK11           ; --                        ;
-; hexdisplay:score_2_tens_disp|Mux7~0 ; LCCOMB_X14_Y18_N26 ; 7       ; Global Clock         ; GCLK1            ; --                        ;
+; CLOCK_50                            ; PIN_N2             ; 182     ; Global Clock         ; GCLK2            ; --                        ;
+; generate_clocks:clk_gen|clk100Hz    ; LCFF_X12_Y20_N3    ; 251     ; Global Clock         ; GCLK0            ; --                        ;
+; generate_clocks:clk_gen|clkdiv      ; LCFF_X31_Y35_N13   ; 38      ; Global Clock         ; GCLK8            ; --                        ;
+; hexdisplay:score_1_ones_disp|Mux7~0 ; LCCOMB_X8_Y20_N18  ; 7       ; Global Clock         ; GCLK3            ; --                        ;
+; hexdisplay:score_1_tens_disp|Mux7~0 ; LCCOMB_X11_Y20_N22 ; 7       ; Global Clock         ; GCLK9            ; --                        ;
+; hexdisplay:score_2_ones_disp|Mux7~0 ; LCCOMB_X8_Y13_N0   ; 7       ; Global Clock         ; GCLK14           ; --                        ;
+; hexdisplay:score_2_tens_disp|Mux7~0 ; LCCOMB_X4_Y14_N26  ; 7       ; Global Clock         ; GCLK1            ; --                        ;
 +-------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1872,25 +1884,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------+---------+
 ; Name                                             ; Fan-Out ;
 +--------------------------------------------------+---------+
-; SW[17]                                           ; 130     ;
-; state_machine:sm|dy[24]~1                        ; 47      ;
-; state_machine:sm|dy[24]~2                        ; 46      ;
+; SW[17]                                           ; 140     ;
+; state_machine:sm|dy[18]~0                        ; 47      ;
+; state_machine:sm|dy[18]~1                        ; 46      ;
 ; state_machine:sm|state.100                       ; 38      ;
 ; state_machine:sm|Add9~62                         ; 33      ;
 ; state_machine:sm|counter_score[31]~0             ; 32      ;
 ; state_machine:sm|random_number:rng_1|number[1]   ; 32      ;
 ; state_machine:sm|random_number:rng_2|number[1]   ; 32      ;
-; state_machine:sm|score_1_tens[28]~35             ; 32      ;
-; state_machine:sm|score_1_tens[28]~34             ; 32      ;
-; state_machine:sm|score_1_ones[3]~36              ; 32      ;
-; state_machine:sm|score_1_ones[3]~34              ; 32      ;
-; state_machine:sm|score_2_tens[14]~35             ; 32      ;
-; state_machine:sm|score_2_tens[14]~34             ; 32      ;
-; state_machine:sm|score_2_ones[17]~35             ; 32      ;
-; state_machine:sm|score_2_ones[17]~34             ; 32      ;
-; state_machine:sm|dx[11]~1                        ; 31      ;
-; state_machine:sm|dy[24]~5                        ; 31      ;
-; VGA_R~15                                         ; 30      ;
+; state_machine:sm|score_1_ones[30]~35             ; 32      ;
+; state_machine:sm|score_1_ones[30]~34             ; 32      ;
+; state_machine:sm|score_2_tens[1]~35              ; 32      ;
+; state_machine:sm|score_2_tens[1]~34              ; 32      ;
+; state_machine:sm|score_2_ones[25]~36             ; 32      ;
+; state_machine:sm|score_2_ones[25]~34             ; 32      ;
+; state_machine:sm|dx[15]~1                        ; 31      ;
+; state_machine:sm|dy[18]~4                        ; 31      ;
 ; debounce:btn_deb_2|debounced~11                  ; 29      ;
 ; debounce:btn_deb_2|always0~0                     ; 29      ;
 ; debounce:btn_deb_3|debounced~11                  ; 29      ;
@@ -1899,32 +1908,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; debounce:btn_deb_0|always0~0                     ; 29      ;
 ; debounce:btn_deb_1|debounced~11                  ; 29      ;
 ; debounce:btn_deb_1|always0~0                     ; 29      ;
+; state_machine:sm|state.001                       ; 25      ;
 ; state_machine:sm|paddle_2_y[9]~3                 ; 22      ;
-; state_machine:sm|state.001                       ; 22      ;
-; state_machine:sm|ball_x[9]~0                     ; 19      ;
-; xvga:vga|Equal3~1                                ; 19      ;
-; state_machine:sm|always0~15                      ; 16      ;
-; state_machine:sm|dy~0                            ; 14      ;
+; state_machine:sm|ball_x[3]~0                     ; 19      ;
+; state_machine:sm|ball_hits_boundary~3            ; 17      ;
+; state_machine:sm|color[6]~0                      ; 15      ;
+; xvga:vga|hcount[8]                               ; 14      ;
+; xvga:vga|Equal3~1                                ; 13      ;
+; xvga:vga|vcount[6]                               ; 13      ;
 ; state_machine:sm|dy[0]                           ; 12      ;
-; xvga:vga|vcount[1]                               ; 12      ;
-; xvga:vga|vcount[4]                               ; 12      ;
-; xvga:vga|vcount[5]                               ; 12      ;
+; VGA_R~15                                         ; 12      ;
+; xvga:vga|hcount[2]                               ; 11      ;
 ; xvga:vga|vcount[0]                               ; 11      ;
-; xvga:vga|vcount[2]                               ; 11      ;
-; xvga:vga|vcount[3]                               ; 11      ;
-; xvga:vga|vcount[7]                               ; 11      ;
-; xvga:vga|vcount[8]                               ; 11      ;
+; xvga:vga|vcount[1]                               ; 11      ;
+; xvga:vga|vcount[4]                               ; 11      ;
+; xvga:vga|vcount[5]                               ; 11      ;
 ; state_machine:sm|paddle_1_y[4]                   ; 10      ;
 ; state_machine:sm|paddle_1_y[6]                   ; 10      ;
-; xvga:vga|hcount[2]                               ; 10      ;
-; xvga:vga|vcount[6]                               ; 10      ;
 ; state_machine:sm|paddle_2_y[4]                   ; 10      ;
 ; state_machine:sm|paddle_2_y[6]                   ; 10      ;
 ; xvga:vga|vcount[9]                               ; 10      ;
+; xvga:vga|vcount[2]                               ; 10      ;
+; xvga:vga|vcount[3]                               ; 10      ;
+; xvga:vga|vcount[8]                               ; 10      ;
+; xvga:vga|vcount[7]                               ; 10      ;
 ; state_machine:sm|paddle_1_y[9]                   ; 10      ;
 ; state_machine:sm|paddle_2_y[9]                   ; 10      ;
-; state_machine:sm|score_1_tens[2]                 ; 10      ;
-; state_machine:sm|score_1_tens[1]                 ; 10      ;
 ; state_machine:sm|score_1_ones[2]                 ; 10      ;
 ; state_machine:sm|score_1_ones[1]                 ; 10      ;
 ; state_machine:sm|score_2_tens[2]                 ; 10      ;
@@ -1935,10 +1944,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|random_number:rng|LessThan0~1   ; 9       ;
 ; state_machine:sm|paddle_dy~0                     ; 9       ;
 ; generate_clocks:clk_gen|Equal0~10                ; 9       ;
-; state_machine:sm|paddle_1_y[5]~7                 ; 9       ;
-; state_machine:sm|paddle_1_y[5]~3                 ; 9       ;
-; state_machine:sm|paddle_2_y[5]~8                 ; 9       ;
-; state_machine:sm|paddle_2_y[5]~4                 ; 9       ;
+; state_machine:sm|color[6]~1                      ; 9       ;
+; state_machine:sm|paddle_1_y[1]~7                 ; 9       ;
+; state_machine:sm|paddle_1_y[1]~3                 ; 9       ;
+; state_machine:sm|paddle_2_y[4]~8                 ; 9       ;
+; state_machine:sm|paddle_2_y[4]~4                 ; 9       ;
 ; generate_clocks:clk_gen|clk100Hz                 ; 9       ;
 ; state_machine:sm|ball_y[0]                       ; 9       ;
 ; state_machine:sm|ball_y[4]                       ; 9       ;
@@ -1946,13 +1956,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|paddle_1_y[3]                   ; 9       ;
 ; state_machine:sm|paddle_1_y[5]                   ; 9       ;
 ; state_machine:sm|paddle_1_y[7]                   ; 9       ;
-; xvga:vga|hcount[4]                               ; 9       ;
-; xvga:vga|hcount[1]                               ; 9       ;
-; xvga:vga|hcount[7]                               ; 9       ;
 ; state_machine:sm|paddle_2_y[1]                   ; 9       ;
 ; state_machine:sm|paddle_2_y[3]                   ; 9       ;
 ; state_machine:sm|paddle_2_y[5]                   ; 9       ;
 ; state_machine:sm|paddle_2_y[7]                   ; 9       ;
+; xvga:vga|hcount[4]                               ; 9       ;
+; xvga:vga|hcount[1]                               ; 9       ;
+; xvga:vga|hcount[7]                               ; 9       ;
 ; state_machine:sm|random_number:rng|Add0~18       ; 9       ;
 ; state_machine:sm|ball_y[1]                       ; 9       ;
 ; state_machine:sm|ball_y[5]                       ; 9       ;
@@ -1960,31 +1970,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|paddle_1_y[8]                   ; 9       ;
 ; state_machine:sm|paddle_2_y[2]                   ; 9       ;
 ; state_machine:sm|paddle_2_y[8]                   ; 9       ;
-; state_machine:sm|score_1_tens[0]                 ; 9       ;
+; state_machine:sm|score_1_tens[2]                 ; 9       ;
+; state_machine:sm|score_1_tens[1]                 ; 9       ;
 ; state_machine:sm|score_1_ones[0]                 ; 9       ;
 ; state_machine:sm|score_2_tens[0]                 ; 9       ;
 ; state_machine:sm|score_2_ones[0]                 ; 9       ;
-; state_machine:sm|paddle_dy[0]~1                  ; 8       ;
+; state_machine:sm|paddle_dy[1]~1                  ; 8       ;
+; xvga:vga|Equal1~2                                ; 8       ;
 ; state_machine:sm|ball_y[2]                       ; 8       ;
 ; state_machine:sm|ball_y[3]                       ; 8       ;
 ; state_machine:sm|ball_y[8]                       ; 8       ;
-; xvga:vga|hcount[8]                               ; 8       ;
+; xvga:vga|hcount[3]                               ; 8       ;
 ; state_machine:sm|ball_y[6]                       ; 8       ;
 ; state_machine:sm|ball_y[7]                       ; 8       ;
 ; state_machine:sm|ball_y[9]                       ; 8       ;
+; state_machine:sm|score_1_tens[0]                 ; 8       ;
 ; debounce:btn_deb_3|debounced                     ; 7       ;
 ; debounce:btn_deb_1|debounced                     ; 7       ;
+; xvga:vga|Equal3~0                                ; 7       ;
 ; state_machine:sm|ball_x[2]                       ; 7       ;
 ; state_machine:sm|ball_x[3]                       ; 7       ;
 ; state_machine:sm|ball_x[4]                       ; 7       ;
 ; xvga:vga|hcount[6]                               ; 7       ;
 ; xvga:vga|hcount[0]                               ; 7       ;
-; xvga:vga|hcount[3]                               ; 7       ;
-; xvga:vga|hcount[9]                               ; 7       ;
 ; state_machine:sm|paddle_1_y[0]                   ; 7       ;
 ; state_machine:sm|paddle_2_y[0]                   ; 7       ;
-; state_machine:sm|state.010                       ; 6       ;
+; state_machine:sm|random_number:rng_3|LessThan0~2 ; 6       ;
 ; state_machine:sm|state.000                       ; 6       ;
+; state_machine:sm|state.010                       ; 6       ;
 ; state_machine:sm|paddle_dy[2]                    ; 6       ;
 ; state_machine:sm|paddle_dy[3]                    ; 6       ;
 ; state_machine:sm|paddle_dy[4]                    ; 6       ;
@@ -1993,36 +2006,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|paddle_dy[7]                    ; 6       ;
 ; state_machine:sm|paddle_dy[8]                    ; 6       ;
 ; state_machine:sm|paddle_dy[9]                    ; 6       ;
+; state_machine:sm|LessThan18~1                    ; 6       ;
 ; state_machine:sm|ball_x[1]                       ; 6       ;
 ; state_machine:sm|ball_x[5]                       ; 6       ;
 ; state_machine:sm|ball_x[6]                       ; 6       ;
 ; state_machine:sm|ball_x[9]                       ; 6       ;
+; xvga:vga|hcount[9]                               ; 6       ;
 ; xvga:vga|hcount[5]                               ; 6       ;
-; state_machine:sm|score_1_tens[3]                 ; 6       ;
 ; state_machine:sm|score_1_ones[3]                 ; 6       ;
 ; state_machine:sm|score_2_tens[3]                 ; 6       ;
 ; state_machine:sm|score_2_ones[3]                 ; 6       ;
+; SW[0]                                            ; 5       ;
 ; state_machine:sm|Equal4~10                       ; 5       ;
 ; state_machine:sm|paddle_dy[0]                    ; 5       ;
 ; state_machine:sm|paddle_dy[1]                    ; 5       ;
-; state_machine:sm|LessThan18~1                    ; 5       ;
 ; state_machine:sm|ball_hits_paddle_1~0            ; 5       ;
 ; state_machine:sm|ball_x[0]                       ; 5       ;
 ; state_machine:sm|ball_x[7]                       ; 5       ;
 ; state_machine:sm|ball_x[8]                       ; 5       ;
 ; state_machine:sm|dy[31]                          ; 5       ;
-; SW[0]                                            ; 4       ;
-; state_machine:sm|state~23                        ; 4       ;
+; state_machine:sm|score_1_tens[3]                 ; 5       ;
 ; state_machine:sm|random_number:rng_1|LessThan0~0 ; 4       ;
 ; state_machine:sm|random_number:rng_2|LessThan0~0 ; 4       ;
-; state_machine:sm|state~18                        ; 4       ;
+; state_machine:sm|state~19                        ; 4       ;
 ; state_machine:sm|hit_counter                     ; 4       ;
+; state_machine:sm|state~17                        ; 4       ;
 ; debounce:btn_deb_2|debounced                     ; 4       ;
 ; debounce:btn_deb_0|debounced                     ; 4       ;
-; state_machine:sm|Equal0~10                       ; 4       ;
+; state_machine:sm|score_1_tens[24]~7              ; 4       ;
+; state_machine:sm|score_1_tens[24]~6              ; 4       ;
 ; state_machine:sm|LessThan19~0                    ; 4       ;
 ; state_machine:sm|Equal2~10                       ; 4       ;
-; xvga:vga|hcount[10]                              ; 4       ;
 ; xvga:vga|blank                                   ; 4       ;
 ; state_machine:sm|random_number:rng_1|Add0~8      ; 4       ;
 ; state_machine:sm|random_number:rng_2|Add0~8      ; 4       ;
@@ -2039,18 +2053,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; KEY[3]                                           ; 3       ;
 ; KEY[0]                                           ; 3       ;
 ; KEY[1]                                           ; 3       ;
-; state_machine:sm|always0~17                      ; 3       ;
-; state_machine:sm|always0~16                      ; 3       ;
+; state_machine:sm|always0~13                      ; 3       ;
+; state_machine:sm|always0~12                      ; 3       ;
 ; debounce:btn_deb_2|changed                       ; 3       ;
 ; debounce:btn_deb_3|changed                       ; 3       ;
 ; debounce:btn_deb_0|changed                       ; 3       ;
 ; debounce:btn_deb_1|changed                       ; 3       ;
-; state_machine:sm|state~16                        ; 3       ;
-; state_machine:sm|LessThan8~1                     ; 3       ;
+; state_machine:sm|state~12                        ; 3       ;
+; state_machine:sm|LessThan10~1                    ; 3       ;
 ; state_machine:sm|always0~8                       ; 3       ;
-; state_machine:sm|LessThan12~1                    ; 3       ;
+; state_machine:sm|LessThan14~1                    ; 3       ;
 ; state_machine:sm|always0~4                       ; 3       ;
+; state_machine:sm|Equal1~10                       ; 3       ;
 ; xvga:vga|vreset                                  ; 3       ;
+; xvga:vga|hcount[10]                              ; 3       ;
 ; state_machine:sm|dy[10]                          ; 3       ;
 ; state_machine:sm|dy[11]                          ; 3       ;
 ; state_machine:sm|dy[12]                          ; 3       ;
@@ -2072,6 +2088,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|dy[28]                          ; 3       ;
 ; state_machine:sm|dy[29]                          ; 3       ;
 ; state_machine:sm|dy[30]                          ; 3       ;
+; state_machine:sm|random_number:rng_3|Add0~12     ; 3       ;
+; state_machine:sm|random_number:rng_3|Add0~10     ; 3       ;
 ; state_machine:sm|dx[1]                           ; 3       ;
 ; state_machine:sm|dx[2]                           ; 3       ;
 ; state_machine:sm|dx[3]                           ; 3       ;
@@ -2110,7 +2128,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; hexdisplay:score_2_ones_disp|out_SEG[1]          ; 2       ;
 ; hexdisplay:score_2_ones_disp|out_SEG[0]          ; 2       ;
 ; xvga:vga|next_vblank~5                           ; 2       ;
-; state_machine:sm|dx[11]~0                        ; 2       ;
+; state_machine:sm|dx[15]~0                        ; 2       ;
 ; debounce:btn_deb_2|debounced~9                   ; 2       ;
 ; debounce:btn_deb_2|debounced~4                   ; 2       ;
 ; debounce:btn_deb_3|debounced~9                   ; 2       ;
@@ -2128,12 +2146,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|counter_score[7]                ; 2       ;
 ; state_machine:sm|counter_score[4]                ; 2       ;
 ; state_machine:sm|counter_score[5]                ; 2       ;
+; state_machine:sm|counter_score[12]               ; 2       ;
+; state_machine:sm|counter_score[13]               ; 2       ;
 ; state_machine:sm|counter_score[8]                ; 2       ;
 ; state_machine:sm|counter_score[9]                ; 2       ;
 ; state_machine:sm|counter_score[10]               ; 2       ;
 ; state_machine:sm|counter_score[11]               ; 2       ;
-; state_machine:sm|counter_score[12]               ; 2       ;
-; state_machine:sm|counter_score[13]               ; 2       ;
 ; state_machine:sm|counter_score[14]               ; 2       ;
 ; state_machine:sm|counter_score[15]               ; 2       ;
 ; state_machine:sm|counter_score[16]               ; 2       ;
@@ -2152,7 +2170,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|counter_score[29]               ; 2       ;
 ; state_machine:sm|counter_score[30]               ; 2       ;
 ; state_machine:sm|counter_score[31]               ; 2       ;
-; state_machine:sm|state~14                        ; 2       ;
 ; generate_clocks:clk_gen|count[31]                ; 2       ;
 ; generate_clocks:clk_gen|count[30]                ; 2       ;
 ; generate_clocks:clk_gen|count[29]                ; 2       ;
@@ -2161,12 +2178,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; generate_clocks:clk_gen|count[26]                ; 2       ;
 ; generate_clocks:clk_gen|count[25]                ; 2       ;
 ; generate_clocks:clk_gen|count[24]                ; 2       ;
-; generate_clocks:clk_gen|count[19]                ; 2       ;
-; generate_clocks:clk_gen|count[18]                ; 2       ;
 ; generate_clocks:clk_gen|count[23]                ; 2       ;
 ; generate_clocks:clk_gen|count[22]                ; 2       ;
 ; generate_clocks:clk_gen|count[21]                ; 2       ;
 ; generate_clocks:clk_gen|count[20]                ; 2       ;
+; generate_clocks:clk_gen|count[19]                ; 2       ;
+; generate_clocks:clk_gen|count[18]                ; 2       ;
 ; generate_clocks:clk_gen|count[17]                ; 2       ;
 ; generate_clocks:clk_gen|count[16]                ; 2       ;
 ; generate_clocks:clk_gen|count[13]                ; 2       ;
@@ -2185,6 +2202,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; generate_clocks:clk_gen|count[0]                 ; 2       ;
 ; generate_clocks:clk_gen|count[1]                 ; 2       ;
 ; generate_clocks:clk_gen|count[2]                 ; 2       ;
+; state_machine:sm|random_number:rng_3|number[0]   ; 2       ;
+; state_machine:sm|random_number:rng_3|number[1]   ; 2       ;
+; state_machine:sm|random_number:rng_3|number[2]   ; 2       ;
+; state_machine:sm|random_number:rng_3|number[3]   ; 2       ;
+; state_machine:sm|random_number:rng_3|number[4]   ; 2       ;
+; state_machine:sm|random_number:rng_3|number[5]   ; 2       ;
+; state_machine:sm|random_number:rng_3|number[6]   ; 2       ;
 ; state_machine:sm|random_number:rng|number[0]     ; 2       ;
 ; state_machine:sm|random_number:rng|number[1]     ; 2       ;
 ; state_machine:sm|random_number:rng|number[2]     ; 2       ;
@@ -2194,21 +2218,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|random_number:rng|number[6]     ; 2       ;
 ; state_machine:sm|random_number:rng|number[7]     ; 2       ;
 ; state_machine:sm|random_number:rng|number[8]     ; 2       ;
-; state_machine:sm|LessThan9~0                     ; 2       ;
-; state_machine:sm|LessThan13~0                    ; 2       ;
-; state_machine:sm|score_1_ones[3]~35              ; 2       ;
-; state_machine:sm|Equal1~10                       ; 2       ;
-; state_machine:sm|state~12                        ; 2       ;
-; state_machine:sm|LessThan3~2                     ; 2       ;
+; state_machine:sm|LessThan11~0                    ; 2       ;
+; state_machine:sm|LessThan15~0                    ; 2       ;
+; state_machine:sm|score_2_ones[25]~35             ; 2       ;
+; state_machine:sm|LessThan5~2                     ; 2       ;
 ; state_machine:sm|Equal3~10                       ; 2       ;
 ; xvga:vga|next_vblank~4                           ; 2       ;
 ; xvga:vga|blank~1                                 ; 2       ;
-; xvga:vga|Equal1~3                                ; 2       ;
 ; xvga:vga|hsync~0                                 ; 2       ;
+; state_machine:sm|color[2]                        ; 2       ;
+; state_machine:sm|color[1]                        ; 2       ;
+; state_machine:sm|color[0]                        ; 2       ;
+; state_machine:sm|color[5]                        ; 2       ;
+; state_machine:sm|color[4]                        ; 2       ;
+; state_machine:sm|color[3]                        ; 2       ;
+; state_machine:sm|color[8]                        ; 2       ;
+; state_machine:sm|color[7]                        ; 2       ;
+; state_machine:sm|color[6]                        ; 2       ;
 ; paddle_1~2                                       ; 2       ;
 ; VGA_R~4                                          ; 2       ;
-; xvga:vga|Equal1~2                                ; 2       ;
-; LessThan8~0                                      ; 2       ;
+; xvga:vga|Equal1~0                                ; 2       ;
 ; VGA_R~0                                          ; 2       ;
 ; generate_clocks:clk_gen|clkdiv                   ; 2       ;
 ; xvga:vga|vsync                                   ; 2       ;
@@ -2221,6 +2250,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|random_number:rng_2|Add0~4      ; 2       ;
 ; state_machine:sm|random_number:rng_2|Add0~2      ; 2       ;
 ; state_machine:sm|random_number:rng_2|Add0~0      ; 2       ;
+; state_machine:sm|random_number:rng_3|Add0~14     ; 2       ;
+; state_machine:sm|random_number:rng_3|Add0~8      ; 2       ;
+; state_machine:sm|random_number:rng_3|Add0~6      ; 2       ;
+; state_machine:sm|random_number:rng_3|Add0~4      ; 2       ;
+; state_machine:sm|random_number:rng_3|Add0~2      ; 2       ;
+; state_machine:sm|random_number:rng_3|Add0~0      ; 2       ;
 ; state_machine:sm|Add9~60                         ; 2       ;
 ; state_machine:sm|Add9~58                         ; 2       ;
 ; state_machine:sm|Add9~56                         ; 2       ;
@@ -2382,34 +2417,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; debounce:btn_deb_1|count[5]                      ; 2       ;
 ; debounce:btn_deb_1|count[1]                      ; 2       ;
 ; debounce:btn_deb_1|count[0]                      ; 2       ;
-; state_machine:sm|score_1_tens[31]                ; 2       ;
-; state_machine:sm|score_1_tens[30]                ; 2       ;
-; state_machine:sm|score_1_tens[29]                ; 2       ;
-; state_machine:sm|score_1_tens[28]                ; 2       ;
-; state_machine:sm|score_1_tens[27]                ; 2       ;
-; state_machine:sm|score_1_tens[26]                ; 2       ;
-; state_machine:sm|score_1_tens[25]                ; 2       ;
-; state_machine:sm|score_1_tens[24]                ; 2       ;
-; state_machine:sm|score_1_tens[23]                ; 2       ;
-; state_machine:sm|score_1_tens[22]                ; 2       ;
-; state_machine:sm|score_1_tens[21]                ; 2       ;
-; state_machine:sm|score_1_tens[20]                ; 2       ;
-; state_machine:sm|score_1_tens[19]                ; 2       ;
-; state_machine:sm|score_1_tens[18]                ; 2       ;
-; state_machine:sm|score_1_tens[17]                ; 2       ;
-; state_machine:sm|score_1_tens[16]                ; 2       ;
-; state_machine:sm|score_1_tens[15]                ; 2       ;
-; state_machine:sm|score_1_tens[14]                ; 2       ;
-; state_machine:sm|score_1_tens[13]                ; 2       ;
-; state_machine:sm|score_1_tens[12]                ; 2       ;
-; state_machine:sm|score_1_tens[11]                ; 2       ;
-; state_machine:sm|score_1_tens[10]                ; 2       ;
-; state_machine:sm|score_1_tens[9]                 ; 2       ;
-; state_machine:sm|score_1_tens[8]                 ; 2       ;
-; state_machine:sm|score_1_tens[7]                 ; 2       ;
-; state_machine:sm|score_1_tens[6]                 ; 2       ;
-; state_machine:sm|score_1_tens[5]                 ; 2       ;
-; state_machine:sm|score_1_tens[4]                 ; 2       ;
 ; state_machine:sm|score_1_ones[31]                ; 2       ;
 ; state_machine:sm|score_1_ones[30]                ; 2       ;
 ; state_machine:sm|score_1_ones[29]                ; 2       ;
@@ -2418,14 +2425,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|score_1_ones[26]                ; 2       ;
 ; state_machine:sm|score_1_ones[25]                ; 2       ;
 ; state_machine:sm|score_1_ones[24]                ; 2       ;
-; state_machine:sm|score_1_ones[17]                ; 2       ;
-; state_machine:sm|score_1_ones[16]                ; 2       ;
 ; state_machine:sm|score_1_ones[23]                ; 2       ;
 ; state_machine:sm|score_1_ones[22]                ; 2       ;
 ; state_machine:sm|score_1_ones[21]                ; 2       ;
 ; state_machine:sm|score_1_ones[20]                ; 2       ;
 ; state_machine:sm|score_1_ones[19]                ; 2       ;
 ; state_machine:sm|score_1_ones[18]                ; 2       ;
+; state_machine:sm|score_1_ones[17]                ; 2       ;
+; state_machine:sm|score_1_ones[16]                ; 2       ;
 ; state_machine:sm|score_1_ones[15]                ; 2       ;
 ; state_machine:sm|score_1_ones[14]                ; 2       ;
 ; state_machine:sm|score_1_ones[13]                ; 2       ;
@@ -2496,9 +2503,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|score_2_ones[4]                 ; 2       ;
 ; generate_clocks:clk_gen|clkdiv~0                 ; 1       ;
 ; state_machine:sm|state~22                        ; 1       ;
-; state_machine:sm|state~21                        ; 1       ;
-; state_machine:sm|LessThan3~4                     ; 1       ;
-; xvga:vga|Equal1~6                                ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~8   ; 1       ;
+; state_machine:sm|LessThan5~4                     ; 1       ;
 ; paddle_1~4                                       ; 1       ;
 ; state_machine:sm|random_number:rng_1|counter~3   ; 1       ;
 ; state_machine:sm|random_number:rng_1|counter~2   ; 1       ;
@@ -2506,7 +2512,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|random_number:rng_2|counter~3   ; 1       ;
 ; state_machine:sm|random_number:rng_2|counter~2   ; 1       ;
 ; state_machine:sm|random_number:rng_2|counter~1   ; 1       ;
-; state_machine:sm|dy~71                           ; 1       ;
 ; state_machine:sm|dy~70                           ; 1       ;
 ; state_machine:sm|dy~69                           ; 1       ;
 ; state_machine:sm|dy~68                           ; 1       ;
@@ -2548,6 +2553,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|dy~32                           ; 1       ;
 ; state_machine:sm|dy~31                           ; 1       ;
 ; state_machine:sm|dy~30                           ; 1       ;
+; state_machine:sm|dy~29                           ; 1       ;
 ; state_machine:sm|random_number:rng_1|counter~0   ; 1       ;
 ; state_machine:sm|random_number:rng_1|counter[2]  ; 1       ;
 ; state_machine:sm|random_number:rng_1|counter[3]  ; 1       ;
@@ -2578,16 +2584,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|random_number:rng_2|counter[2]  ; 1       ;
 ; state_machine:sm|random_number:rng_2|counter[3]  ; 1       ;
 ; state_machine:sm|random_number:rng_2|counter[0]  ; 1       ;
-; state_machine:sm|dy~29                           ; 1       ;
 ; state_machine:sm|dy~28                           ; 1       ;
+; state_machine:sm|dy~27                           ; 1       ;
 ; state_machine:sm|hit_counter~0                   ; 1       ;
+; state_machine:sm|state.000~0                     ; 1       ;
 ; state_machine:sm|counter_score~4                 ; 1       ;
 ; state_machine:sm|counter_score~3                 ; 1       ;
 ; state_machine:sm|counter_score~2                 ; 1       ;
 ; state_machine:sm|counter_score~1                 ; 1       ;
+; state_machine:sm|state~21                        ; 1       ;
 ; state_machine:sm|state~20                        ; 1       ;
-; state_machine:sm|state~19                        ; 1       ;
-; state_machine:sm|state.000~0                     ; 1       ;
 ; generate_clocks:clk_gen|count~7                  ; 1       ;
 ; generate_clocks:clk_gen|count~6                  ; 1       ;
 ; generate_clocks:clk_gen|count~5                  ; 1       ;
@@ -2596,6 +2602,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; generate_clocks:clk_gen|count~2                  ; 1       ;
 ; generate_clocks:clk_gen|count~1                  ; 1       ;
 ; generate_clocks:clk_gen|count~0                  ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~7   ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~6   ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~5   ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~4   ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~3   ; 1       ;
+; state_machine:sm|random_number:rng_3|counter~2   ; 1       ;
+; state_machine:sm|random_number:rng_3|LessThan0~1 ; 1       ;
+; state_machine:sm|random_number:rng_3|LessThan0~0 ; 1       ;
 ; state_machine:sm|Add11~26                        ; 1       ;
 ; state_machine:sm|Add11~25                        ; 1       ;
 ; state_machine:sm|Add11~24                        ; 1       ;
@@ -2615,7 +2629,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|random_number:rng|counter~1     ; 1       ;
 ; state_machine:sm|random_number:rng|counter~0     ; 1       ;
 ; state_machine:sm|random_number:rng|LessThan0~0   ; 1       ;
-; state_machine:sm|dy~27                           ; 1       ;
 ; state_machine:sm|dy~26                           ; 1       ;
 ; state_machine:sm|dy~25                           ; 1       ;
 ; state_machine:sm|dy~24                           ; 1       ;
@@ -2637,8 +2650,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|dy~8                            ; 1       ;
 ; state_machine:sm|dy~7                            ; 1       ;
 ; state_machine:sm|dy~6                            ; 1       ;
-; state_machine:sm|dy~4                            ; 1       ;
+; state_machine:sm|dy~5                            ; 1       ;
 ; state_machine:sm|dy~3                            ; 1       ;
+; state_machine:sm|dy~2                            ; 1       ;
 ; debounce:btn_deb_2|debounced~10                  ; 1       ;
 ; debounce:btn_deb_2|debounced~8                   ; 1       ;
 ; debounce:btn_deb_2|debounced~7                   ; 1       ;
@@ -2676,14 +2690,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|Selector91~0                    ; 1       ;
 ; state_machine:sm|Selector90~1                    ; 1       ;
 ; state_machine:sm|Selector90~0                    ; 1       ;
-; state_machine:sm|ball_hits_paddle_1~2            ; 1       ;
-; state_machine:sm|ball_hits_paddle_1~1            ; 1       ;
-; state_machine:sm|ball_hits_paddle_2~0            ; 1       ;
-; state_machine:sm|LessThan18~2                    ; 1       ;
-; state_machine:sm|LessThan3~3                     ; 1       ;
-; state_machine:sm|always0~14                      ; 1       ;
-; state_machine:sm|always0~13                      ; 1       ;
-; state_machine:sm|always0~12                      ; 1       ;
 ; debounce:btn_deb_0|debounced~10                  ; 1       ;
 ; debounce:btn_deb_0|debounced~8                   ; 1       ;
 ; debounce:btn_deb_0|debounced~7                   ; 1       ;
@@ -2702,7 +2708,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; debounce:btn_deb_1|debounced~2                   ; 1       ;
 ; debounce:btn_deb_1|debounced~1                   ; 1       ;
 ; debounce:btn_deb_1|debounced~0                   ; 1       ;
-; state_machine:sm|state~17                        ; 1       ;
+; state_machine:sm|state~18                        ; 1       ;
+; state_machine:sm|state~16                        ; 1       ;
+; state_machine:sm|state~15                        ; 1       ;
+; state_machine:sm|state~14                        ; 1       ;
+; state_machine:sm|state~13                        ; 1       ;
 ; state_machine:sm|Equal4~9                        ; 1       ;
 ; state_machine:sm|Equal4~8                        ; 1       ;
 ; state_machine:sm|Equal4~7                        ; 1       ;
@@ -2713,8 +2723,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|Equal4~2                        ; 1       ;
 ; state_machine:sm|Equal4~1                        ; 1       ;
 ; state_machine:sm|Equal4~0                        ; 1       ;
-; state_machine:sm|state~15                        ; 1       ;
-; state_machine:sm|state~13                        ; 1       ;
 ; generate_clocks:clk_gen|clk100Hz~0               ; 1       ;
 ; generate_clocks:clk_gen|Equal0~9                 ; 1       ;
 ; generate_clocks:clk_gen|Equal0~8                 ; 1       ;
@@ -2726,6 +2734,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; generate_clocks:clk_gen|Equal0~2                 ; 1       ;
 ; generate_clocks:clk_gen|Equal0~1                 ; 1       ;
 ; generate_clocks:clk_gen|Equal0~0                 ; 1       ;
+; state_machine:sm|Add15~26                        ; 1       ;
+; state_machine:sm|Add15~25                        ; 1       ;
+; state_machine:sm|Add15~24                        ; 1       ;
+; state_machine:sm|Add15~23                        ; 1       ;
+; state_machine:sm|Add15~22                        ; 1       ;
+; state_machine:sm|Add15~21                        ; 1       ;
+; state_machine:sm|Add15~20                        ; 1       ;
+; state_machine:sm|Add15~17                        ; 1       ;
+; state_machine:sm|ball_hits_paddle_1~2            ; 1       ;
+; state_machine:sm|ball_hits_paddle_1~1            ; 1       ;
+; state_machine:sm|ball_hits_paddle_2~0            ; 1       ;
+; state_machine:sm|LessThan18~2                    ; 1       ;
+; state_machine:sm|LessThan5~3                     ; 1       ;
+; state_machine:sm|ball_hits_boundary~2            ; 1       ;
+; state_machine:sm|ball_hits_boundary~1            ; 1       ;
+; state_machine:sm|ball_hits_boundary~0            ; 1       ;
+; state_machine:sm|Add15~14                        ; 1       ;
 ; state_machine:sm|Add2~29                         ; 1       ;
 ; state_machine:sm|Add2~28                         ; 1       ;
 ; state_machine:sm|Add2~27                         ; 1       ;
@@ -2754,24 +2779,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|paddle_1_y~10                   ; 1       ;
 ; state_machine:sm|paddle_1_y~9                    ; 1       ;
 ; state_machine:sm|paddle_1_y~8                    ; 1       ;
-; state_machine:sm|paddle_1_y[5]~6                 ; 1       ;
-; state_machine:sm|paddle_1_y[5]~5                 ; 1       ;
+; state_machine:sm|paddle_1_y[1]~6                 ; 1       ;
+; state_machine:sm|paddle_1_y[1]~5                 ; 1       ;
 ; state_machine:sm|paddle_1_y~4                    ; 1       ;
 ; state_machine:sm|paddle_1_y~2                    ; 1       ;
 ; state_machine:sm|paddle_1_y~1                    ; 1       ;
-; state_machine:sm|LessThan8~0                     ; 1       ;
+; state_machine:sm|LessThan10~0                    ; 1       ;
 ; state_machine:sm|paddle_1_y~0                    ; 1       ;
 ; state_machine:sm|always0~11                      ; 1       ;
 ; state_machine:sm|always0~10                      ; 1       ;
 ; state_machine:sm|always0~9                       ; 1       ;
-; xvga:vga|hcount~5                                ; 1       ;
-; xvga:vga|hcount~4                                ; 1       ;
-; xvga:vga|hcount~3                                ; 1       ;
-; xvga:vga|hcount~2                                ; 1       ;
-; xvga:vga|hcount~1                                ; 1       ;
-; xvga:vga|hcount~0                                ; 1       ;
 ; state_machine:sm|paddle_2_y~16                   ; 1       ;
-; xvga:vga|vcount~1                                ; 1       ;
 ; state_machine:sm|paddle_2_y~15                   ; 1       ;
 ; state_machine:sm|paddle_2_y~14                   ; 1       ;
 ; state_machine:sm|paddle_2_y~13                   ; 1       ;
@@ -2779,16 +2797,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|paddle_2_y~11                   ; 1       ;
 ; state_machine:sm|paddle_2_y~10                   ; 1       ;
 ; state_machine:sm|paddle_2_y~9                    ; 1       ;
-; state_machine:sm|paddle_2_y[5]~7                 ; 1       ;
-; state_machine:sm|paddle_2_y[5]~6                 ; 1       ;
+; state_machine:sm|paddle_2_y[4]~7                 ; 1       ;
+; state_machine:sm|paddle_2_y[4]~6                 ; 1       ;
 ; state_machine:sm|paddle_2_y~5                    ; 1       ;
 ; state_machine:sm|paddle_2_y~2                    ; 1       ;
 ; state_machine:sm|paddle_2_y~1                    ; 1       ;
-; state_machine:sm|LessThan12~0                    ; 1       ;
+; state_machine:sm|LessThan14~0                    ; 1       ;
 ; state_machine:sm|paddle_2_y~0                    ; 1       ;
 ; state_machine:sm|always0~7                       ; 1       ;
 ; state_machine:sm|always0~6                       ; 1       ;
 ; state_machine:sm|always0~5                       ; 1       ;
+; xvga:vga|vcount~1                                ; 1       ;
+; xvga:vga|hcount~5                                ; 1       ;
+; xvga:vga|hcount~4                                ; 1       ;
+; xvga:vga|hcount~3                                ; 1       ;
+; xvga:vga|hcount~2                                ; 1       ;
+; xvga:vga|hcount~1                                ; 1       ;
+; xvga:vga|hcount~0                                ; 1       ;
 ; xvga:vga|vcount~0                                ; 1       ;
 ; state_machine:sm|LessThan18~0                    ; 1       ;
 ; state_machine:sm|Equal1~9                        ; 1       ;
@@ -2801,16 +2826,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state_machine:sm|Equal1~2                        ; 1       ;
 ; state_machine:sm|Equal1~1                        ; 1       ;
 ; state_machine:sm|Equal1~0                        ; 1       ;
-; state_machine:sm|Equal0~9                        ; 1       ;
-; state_machine:sm|Equal0~8                        ; 1       ;
-; state_machine:sm|Equal0~7                        ; 1       ;
-; state_machine:sm|Equal0~6                        ; 1       ;
-; state_machine:sm|Equal0~5                        ; 1       ;
-; state_machine:sm|Equal0~4                        ; 1       ;
-; state_machine:sm|Equal0~3                        ; 1       ;
-; state_machine:sm|Equal0~2                        ; 1       ;
-; state_machine:sm|Equal0~1                        ; 1       ;
-; state_machine:sm|Equal0~0                        ; 1       ;
 ; state_machine:sm|Equal3~9                        ; 1       ;
 ; state_machine:sm|Equal3~8                        ; 1       ;
 ; state_machine:sm|Equal3~7                        ; 1       ;
@@ -2842,11 +2857,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; xvga:vga|vsync~0                                 ; 1       ;
 ; xvga:vga|next_vblank~2                           ; 1       ;
 ; xvga:vga|vreset~0                                ; 1       ;
-; xvga:vga|Equal3~0                                ; 1       ;
 ; xvga:vga|hsync~2                                 ; 1       ;
-; xvga:vga|Equal1~5                                ; 1       ;
-; xvga:vga|Equal1~4                                ; 1       ;
+; xvga:vga|Equal1~3                                ; 1       ;
+; xvga:vga|Equal1~1                                ; 1       ;
 ; xvga:vga|hsync~1                                 ; 1       ;
+; VGA_B~2                                          ; 1       ;
+; VGA_B~1                                          ; 1       ;
+; VGA_B~0                                          ; 1       ;
+; VGA_G~2                                          ; 1       ;
+; VGA_G~1                                          ; 1       ;
+; VGA_G~0                                          ; 1       ;
+; VGA_R~18                                         ; 1       ;
+; VGA_R~17                                         ; 1       ;
+; VGA_R~16                                         ; 1       ;
 ; VGA_R~14                                         ; 1       ;
 ; VGA_R~13                                         ; 1       ;
 ; VGA_R~12                                         ; 1       ;
@@ -2859,19 +2882,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VGA_R~6                                          ; 1       ;
 ; VGA_R~5                                          ; 1       ;
 ; VGA_R~3                                          ; 1       ;
-; middle_line~4                                    ; 1       ;
-; middle_line~3                                    ; 1       ;
-; middle_line~2                                    ; 1       ;
-; middle_line~1                                    ; 1       ;
-; middle_line~0                                    ; 1       ;
 ; VGA_R~2                                          ; 1       ;
 ; VGA_R~1                                          ; 1       ;
-; hexdisplay:score_1_tens_disp|Mux6~0              ; 1       ;
-; hexdisplay:score_1_tens_disp|Mux5~0              ; 1       ;
-; hexdisplay:score_1_tens_disp|Mux4~0              ; 1       ;
-; hexdisplay:score_1_tens_disp|Mux3~0              ; 1       ;
-; hexdisplay:score_1_tens_disp|Mux2~0              ; 1       ;
-; hexdisplay:score_1_tens_disp|Mux1~0              ; 1       ;
 +--------------------------------------------------+---------+
 
 
@@ -2880,161 +2892,159 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 1,711 / 94,460 ( 2 % ) ;
-; C16 interconnects           ; 8 / 3,315 ( < 1 % )    ;
-; C4 interconnects            ; 723 / 60,840 ( 1 % )   ;
-; Direct links                ; 528 / 94,460 ( < 1 % ) ;
+; Block interconnects         ; 1,654 / 94,460 ( 2 % ) ;
+; C16 interconnects           ; 11 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 668 / 60,840 ( 1 % )   ;
+; Direct links                ; 519 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 7 / 16 ( 44 % )        ;
-; Local interconnects         ; 624 / 33,216 ( 2 % )   ;
-; R24 interconnects           ; 27 / 3,091 ( < 1 % )   ;
-; R4 interconnects            ; 866 / 81,294 ( 1 % )   ;
+; Local interconnects         ; 645 / 33,216 ( 2 % )   ;
+; R24 interconnects           ; 23 / 3,091 ( < 1 % )   ;
+; R4 interconnects            ; 748 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.04) ; Number of LABs  (Total = 114) ;
+; Number of Logic Elements  (Average = 13.06) ; Number of LABs  (Total = 104) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 9                             ;
-; 2                                           ; 4                             ;
+; 1                                           ; 3                             ;
+; 2                                           ; 0                             ;
 ; 3                                           ; 3                             ;
-; 4                                           ; 2                             ;
-; 5                                           ; 0                             ;
+; 4                                           ; 0                             ;
+; 5                                           ; 4                             ;
 ; 6                                           ; 1                             ;
-; 7                                           ; 3                             ;
-; 8                                           ; 1                             ;
-; 9                                           ; 3                             ;
-; 10                                          ; 11                            ;
-; 11                                          ; 5                             ;
-; 12                                          ; 4                             ;
+; 7                                           ; 2                             ;
+; 8                                           ; 0                             ;
+; 9                                           ; 2                             ;
+; 10                                          ; 9                             ;
+; 11                                          ; 9                             ;
+; 12                                          ; 2                             ;
 ; 13                                          ; 5                             ;
-; 14                                          ; 1                             ;
-; 15                                          ; 7                             ;
-; 16                                          ; 55                            ;
+; 14                                          ; 3                             ;
+; 15                                          ; 8                             ;
+; 16                                          ; 53                            ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.22) ; Number of LABs  (Total = 114) ;
+; LAB-wide Signals  (Average = 1.26) ; Number of LABs  (Total = 104) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 60                            ;
-; 1 Clock enable                     ; 40                            ;
-; 1 Sync. clear                      ; 28                            ;
-; 1 Sync. load                       ; 5                             ;
-; 2 Clocks                           ; 6                             ;
+; 1 Clock                            ; 55                            ;
+; 1 Clock enable                     ; 36                            ;
+; 1 Sync. clear                      ; 26                            ;
+; 1 Sync. load                       ; 3                             ;
+; 2 Clock enables                    ; 2                             ;
+; 2 Clocks                           ; 9                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 15.31) ; Number of LABs  (Total = 114) ;
+; Number of Signals Sourced  (Average = 16.39) ; Number of LABs  (Total = 104) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 1                             ;
-; 1                                            ; 9                             ;
-; 2                                            ; 8                             ;
-; 3                                            ; 5                             ;
+; 1                                            ; 4                             ;
+; 2                                            ; 3                             ;
+; 3                                            ; 3                             ;
 ; 4                                            ; 3                             ;
-; 5                                            ; 1                             ;
+; 5                                            ; 6                             ;
 ; 6                                            ; 0                             ;
 ; 7                                            ; 2                             ;
-; 8                                            ; 2                             ;
-; 9                                            ; 3                             ;
-; 10                                           ; 5                             ;
-; 11                                           ; 5                             ;
-; 12                                           ; 3                             ;
+; 8                                            ; 0                             ;
+; 9                                            ; 2                             ;
+; 10                                           ; 7                             ;
+; 11                                           ; 1                             ;
+; 12                                           ; 2                             ;
 ; 13                                           ; 5                             ;
-; 14                                           ; 2                             ;
-; 15                                           ; 3                             ;
+; 14                                           ; 3                             ;
+; 15                                           ; 7                             ;
 ; 16                                           ; 11                            ;
-; 17                                           ; 4                             ;
-; 18                                           ; 2                             ;
+; 17                                           ; 5                             ;
+; 18                                           ; 1                             ;
 ; 19                                           ; 3                             ;
-; 20                                           ; 4                             ;
-; 21                                           ; 1                             ;
+; 20                                           ; 0                             ;
+; 21                                           ; 5                             ;
 ; 22                                           ; 2                             ;
-; 23                                           ; 1                             ;
-; 24                                           ; 4                             ;
-; 25                                           ; 2                             ;
+; 23                                           ; 2                             ;
+; 24                                           ; 2                             ;
+; 25                                           ; 3                             ;
 ; 26                                           ; 1                             ;
-; 27                                           ; 1                             ;
-; 28                                           ; 1                             ;
-; 29                                           ; 1                             ;
+; 27                                           ; 0                             ;
+; 28                                           ; 2                             ;
+; 29                                           ; 0                             ;
 ; 30                                           ; 6                             ;
 ; 31                                           ; 5                             ;
-; 32                                           ; 8                             ;
+; 32                                           ; 7                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 8.96) ; Number of LABs  (Total = 114) ;
+; Number of Signals Sourced Out  (Average = 9.43) ; Number of LABs  (Total = 104) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 1                             ;
-; 1                                               ; 17                            ;
-; 2                                               ; 8                             ;
-; 3                                               ; 6                             ;
-; 4                                               ; 3                             ;
-; 5                                               ; 3                             ;
-; 6                                               ; 3                             ;
+; 1                                               ; 9                             ;
+; 2                                               ; 3                             ;
+; 3                                               ; 9                             ;
+; 4                                               ; 4                             ;
+; 5                                               ; 6                             ;
+; 6                                               ; 1                             ;
 ; 7                                               ; 4                             ;
-; 8                                               ; 6                             ;
-; 9                                               ; 9                             ;
-; 10                                              ; 5                             ;
-; 11                                              ; 5                             ;
-; 12                                              ; 7                             ;
-; 13                                              ; 2                             ;
-; 14                                              ; 2                             ;
+; 8                                               ; 7                             ;
+; 9                                               ; 7                             ;
+; 10                                              ; 7                             ;
+; 11                                              ; 4                             ;
+; 12                                              ; 6                             ;
+; 13                                              ; 1                             ;
+; 14                                              ; 6                             ;
 ; 15                                              ; 7                             ;
-; 16                                              ; 24                            ;
-; 17                                              ; 1                             ;
-; 18                                              ; 0                             ;
-; 19                                              ; 0                             ;
-; 20                                              ; 1                             ;
+; 16                                              ; 22                            ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 14.32) ; Number of LABs  (Total = 114) ;
+; Number of Distinct Inputs  (Average = 15.35) ; Number of LABs  (Total = 104) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 2                             ;
-; 2                                            ; 3                             ;
-; 3                                            ; 6                             ;
+; 1                                            ; 0                             ;
+; 2                                            ; 0                             ;
+; 3                                            ; 5                             ;
 ; 4                                            ; 16                            ;
-; 5                                            ; 1                             ;
-; 6                                            ; 2                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 3                             ;
-; 9                                            ; 3                             ;
+; 5                                            ; 2                             ;
+; 6                                            ; 1                             ;
+; 7                                            ; 5                             ;
+; 8                                            ; 0                             ;
+; 9                                            ; 1                             ;
 ; 10                                           ; 5                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 3                             ;
-; 13                                           ; 1                             ;
-; 14                                           ; 1                             ;
-; 15                                           ; 4                             ;
-; 16                                           ; 8                             ;
-; 17                                           ; 8                             ;
+; 11                                           ; 1                             ;
+; 12                                           ; 2                             ;
+; 13                                           ; 3                             ;
+; 14                                           ; 2                             ;
+; 15                                           ; 1                             ;
+; 16                                           ; 11                            ;
+; 17                                           ; 10                            ;
 ; 18                                           ; 0                             ;
 ; 19                                           ; 2                             ;
-; 20                                           ; 10                            ;
-; 21                                           ; 5                             ;
-; 22                                           ; 6                             ;
+; 20                                           ; 8                             ;
+; 21                                           ; 2                             ;
+; 22                                           ; 9                             ;
 ; 23                                           ; 4                             ;
-; 24                                           ; 2                             ;
+; 24                                           ; 0                             ;
 ; 25                                           ; 0                             ;
 ; 26                                           ; 1                             ;
-; 27                                           ; 4                             ;
-; 28                                           ; 1                             ;
-; 29                                           ; 3                             ;
-; 30                                           ; 1                             ;
-; 31                                           ; 3                             ;
+; 27                                           ; 1                             ;
+; 28                                           ; 3                             ;
+; 29                                           ; 0                             ;
+; 30                                           ; 3                             ;
+; 31                                           ; 5                             ;
+; 32                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -3072,8 +3082,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------+----------------------------------+-------------------+
 ; Source Clock(s)                  ; Destination Clock(s)             ; Delay Added in ns ;
 +----------------------------------+----------------------------------+-------------------+
-; generate_clocks:clk_gen|clk100Hz ; state_machine:sm|score_2_tens[1] ; 1.4               ;
-; generate_clocks:clk_gen|clk100Hz ; state_machine:sm|score_1_ones[1] ; 1.3               ;
+; generate_clocks:clk_gen|clk100Hz ; state_machine:sm|score_1_ones[1] ; 2.6               ;
+; generate_clocks:clk_gen|clk100Hz ; state_machine:sm|score_1_tens[1] ; 2.3               ;
+; generate_clocks:clk_gen|clk100Hz ; state_machine:sm|score_2_tens[1] ; 1.3               ;
 +----------------------------------+----------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -3084,12 +3095,12 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------+-----------------------------------------+-------------------+
 ; Source Register                  ; Destination Register                    ; Delay Added in ns ;
 +----------------------------------+-----------------------------------------+-------------------+
-; state_machine:sm|score_2_tens[2] ; hexdisplay:score_2_tens_disp|out_SEG[6] ; 0.698             ;
-; state_machine:sm|score_2_tens[3] ; hexdisplay:score_2_tens_disp|out_SEG[6] ; 0.697             ;
-; state_machine:sm|score_1_ones[3] ; hexdisplay:score_1_ones_disp|out_SEG[6] ; 0.643             ;
-; state_machine:sm|score_1_ones[2] ; hexdisplay:score_1_ones_disp|out_SEG[6] ; 0.643             ;
-; state_machine:sm|score_1_tens[3] ; hexdisplay:score_1_tens_disp|out_SEG[6] ; 0.284             ;
-; state_machine:sm|score_1_tens[2] ; hexdisplay:score_1_tens_disp|out_SEG[6] ; 0.278             ;
+; state_machine:sm|score_1_ones[3] ; hexdisplay:score_1_ones_disp|out_SEG[6] ; 1.300             ;
+; state_machine:sm|score_1_ones[2] ; hexdisplay:score_1_ones_disp|out_SEG[6] ; 1.300             ;
+; state_machine:sm|score_1_tens[2] ; hexdisplay:score_1_tens_disp|out_SEG[6] ; 1.199             ;
+; state_machine:sm|score_1_tens[3] ; hexdisplay:score_1_tens_disp|out_SEG[6] ; 1.066             ;
+; state_machine:sm|score_2_tens[3] ; hexdisplay:score_2_tens_disp|out_SEG[6] ; 0.673             ;
+; state_machine:sm|score_2_tens[2] ; hexdisplay:score_2_tens_disp|out_SEG[6] ; 0.673             ;
 +----------------------------------+-----------------------------------------+-------------------+
 Note: This table only shows the top 6 path(s) that have the largest delay added for hold.
 
@@ -3462,11 +3473,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
+    Info (170196): Router estimated peak interconnect usage is 7% of the available device resources in the region that extends from location X22_Y12 to location X32_Y23
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 1.31 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.27 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 92 output pins without output pin load capacitance assignment
     Info (306007): Pin "LEDR[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -3570,9 +3581,9 @@ Warning (169174): The Reserve All Unused Pins setting has not been specified, an
 Info (144001): Generated suppressed messages file H:/TUM-PC/Dokumente/GitHub/Project_Pong_VHDL/vhdl/output_files/Project.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 317 warnings
     Info: Peak virtual memory: 4897 megabytes
-    Info: Processing ended: Wed Jul 16 18:00:16 2025
+    Info: Processing ended: Wed Jul 16 18:59:58 2025
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +----------------------------+
