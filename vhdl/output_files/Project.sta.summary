@@ -3,24 +3,56 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clkdiv'
-Slack : -7.213
-TNS   : -275.393
+Slack : -6.905
+TNS   : -255.915
 
 Type  : Slow Model Setup 'clk100Hz'
-Slack : -5.947
-TNS   : -557.252
+Slack : -5.680
+TNS   : -1244.978
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -3.059
-TNS   : -402.434
+Slack : -3.355
+TNS   : -437.442
+
+Type  : Slow Model Setup 'state_machine:sm|score_2_tens[1]'
+Slack : -1.369
+TNS   : -8.445
+
+Type  : Slow Model Setup 'state_machine:sm|score_2_ones[1]'
+Slack : -0.850
+TNS   : -5.612
+
+Type  : Slow Model Setup 'state_machine:sm|score_1_tens[1]'
+Slack : -0.379
+TNS   : -0.611
+
+Type  : Slow Model Setup 'state_machine:sm|score_1_ones[1]'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Slow Model Hold 'state_machine:sm|score_1_ones[1]'
+Slack : -3.025
+TNS   : -21.105
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.562
-TNS   : -5.120
+Slack : -2.558
+TNS   : -5.113
+
+Type  : Slow Model Hold 'state_machine:sm|score_1_tens[1]'
+Slack : -2.549
+TNS   : -17.240
 
 Type  : Slow Model Hold 'clk100Hz'
-Slack : 0.391
-TNS   : 0.000
+Slack : -2.297
+TNS   : -99.937
+
+Type  : Slow Model Hold 'state_machine:sm|score_2_tens[1]'
+Slack : -2.056
+TNS   : -12.995
+
+Type  : Slow Model Hold 'state_machine:sm|score_2_ones[1]'
+Slack : -1.793
+TNS   : -11.836
 
 Type  : Slow Model Hold 'clkdiv'
 Slack : 0.391
@@ -28,35 +60,83 @@ TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -159.380
+TNS   : -176.380
 
 Type  : Slow Model Minimum Pulse Width 'clk100Hz'
 Slack : -0.500
-TNS   : -149.000
+TNS   : -278.000
 
 Type  : Slow Model Minimum Pulse Width 'clkdiv'
 Slack : -0.500
 TNS   : -56.000
 
+Type  : Slow Model Minimum Pulse Width 'state_machine:sm|score_1_ones[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'state_machine:sm|score_1_tens[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'state_machine:sm|score_2_ones[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'state_machine:sm|score_2_tens[1]'
+Slack : 0.500
+TNS   : 0.000
+
 Type  : Fast Model Setup 'clkdiv'
-Slack : -2.606
-TNS   : -92.138
+Slack : -2.554
+TNS   : -85.438
 
 Type  : Fast Model Setup 'clk100Hz'
-Slack : -2.209
-TNS   : -177.953
+Slack : -2.053
+TNS   : -423.330
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.942
-TNS   : -112.151
+Slack : -1.004
+TNS   : -117.517
+
+Type  : Fast Model Setup 'state_machine:sm|score_2_tens[1]'
+Slack : -0.206
+TNS   : -0.852
+
+Type  : Fast Model Setup 'state_machine:sm|score_2_ones[1]'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Fast Model Setup 'state_machine:sm|score_1_tens[1]'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Fast Model Setup 'state_machine:sm|score_1_ones[1]'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Fast Model Hold 'state_machine:sm|score_1_ones[1]'
+Slack : -1.722
+TNS   : -11.984
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.602
-TNS   : -3.200
+Slack : -1.598
+TNS   : -3.193
+
+Type  : Fast Model Hold 'state_machine:sm|score_1_tens[1]'
+Slack : -1.507
+TNS   : -10.199
 
 Type  : Fast Model Hold 'clk100Hz'
-Slack : 0.215
-TNS   : 0.000
+Slack : -1.492
+TNS   : -98.047
+
+Type  : Fast Model Hold 'state_machine:sm|score_2_tens[1]'
+Slack : -1.216
+TNS   : -7.862
+
+Type  : Fast Model Hold 'state_machine:sm|score_2_ones[1]'
+Slack : -1.098
+TNS   : -7.378
 
 Type  : Fast Model Hold 'clkdiv'
 Slack : 0.215
@@ -64,14 +144,30 @@ TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -159.380
+TNS   : -176.380
 
 Type  : Fast Model Minimum Pulse Width 'clk100Hz'
 Slack : -0.500
-TNS   : -149.000
+TNS   : -278.000
 
 Type  : Fast Model Minimum Pulse Width 'clkdiv'
 Slack : -0.500
 TNS   : -56.000
+
+Type  : Fast Model Minimum Pulse Width 'state_machine:sm|score_1_ones[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'state_machine:sm|score_1_tens[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'state_machine:sm|score_2_ones[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'state_machine:sm|score_2_tens[1]'
+Slack : 0.500
+TNS   : 0.000
 
 ------------------------------------------------------------

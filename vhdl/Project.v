@@ -81,7 +81,7 @@ integer score_2_tens = 0;
 
 
 //STATE MACHINE
-state_machine sm #(
+state_machine #(
 	.upper_lim_y(upper_lim_y), .lower_lim_y(lower_lim_y), .upper_lim_x(upper_lim_x), .lower_lim_x(lower_lim_x),
 	.BALL_SIZE(BALL_SIZE),
 	.initial_ball_x(initial_ball_x), .initial_ball_y(initial_ball_y),
@@ -90,8 +90,8 @@ state_machine sm #(
 	.disp_shift(disp_shift),
 	.paddle_1_x(paddle_1_x), .paddle_2_x(paddle_2_x),
 	.initial_paddle_dy(initial_paddle_dy), .initial_paddle_y(initial_paddle_y)
-)(
-	clk100Hz, reset, pause,
+) sm (
+	clk100Hz, CLOCK_50, reset, pause,
 	btn_1_up, btn_1_down, btn_2_up, btn_2_down,
 
 	score_1_ones, score_1_tens, score_2_ones, score_2_tens,

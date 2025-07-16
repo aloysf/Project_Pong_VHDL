@@ -1,5 +1,5 @@
 |Project
-CLOCK_50 => CLOCK_50.IN4
+CLOCK_50 => CLOCK_50.IN5
 CLOCK_27 => ~NO_FANOUT~
 SW[0] => pause.IN1
 SW[1] => ~NO_FANOUT~
@@ -266,38 +266,6 @@ debounced <= debounced~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project|state_machine:sm
-upper_lim_y => upper_lim_y.IN1
-lower_lim_y => Add10.IN1
-upper_lim_x => Add25.IN2
-lower_lim_x => LessThan19.IN10
-BALL_SIZE => Add25.IN1
-BALL_SIZE => Add2.IN1
-BALL_SIZE => Add16.IN1
-initial_ball_x => ball_x.DATAB
-initial_ball_x => ball_x.DATAB
-initial_ball_x => ball_x.DATAB
-initial_ball_y => ball_y.DATAB
-initial_dx => dx.DATAB
-initial_dx => dx.DATAB
-initial_dx => Add30.IN33
-initial_dy => dy.DATAB
-initial_dy => dy.DATAB
-initial_dy => Add31.IN33
-paddle_size_x => Add0.IN1
-paddle_size_y => Add1.IN10
-paddle_size_y => Add3.IN10
-paddle_size_y => Add7.IN1
-disp_shift => Add6.IN20
-disp_shift => Add8.IN20
-disp_shift => Add10.IN2
-disp_shift => Add12.IN20
-disp_shift => Add13.IN20
-disp_shift => Add17.IN20
-paddle_1_x => Add0.IN2
-paddle_2_x => Add2.IN2
-initial_paddle_dy => Selector99.IN2
-initial_paddle_y => paddle_1_y.DATAB
-initial_paddle_y => paddle_2_y.DATAB
 clk100Hz => counter_score[0].CLK
 clk100Hz => counter_score[1].CLK
 clk100Hz => counter_score[2].CLK
@@ -596,6 +564,7 @@ clk100Hz => score_1_ones[29]~reg0.CLK
 clk100Hz => score_1_ones[30]~reg0.CLK
 clk100Hz => score_1_ones[31]~reg0.CLK
 clk100Hz => state~5.DATAIN
+CLOCK_50 => CLOCK_50.IN3
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT

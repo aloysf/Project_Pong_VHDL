@@ -5,10 +5,10 @@ module state_machine #(parameter upper_lim_y=0, lower_lim_y=0, upper_lim_x=0, lo
     paddle_size_x=0, paddle_size_y=0,
     disp_shift=0,
     paddle_1_x=0, paddle_2_x=0,
-    initial_paddle_dy=0, initial_paddle_y=0,
+    initial_paddle_dy=0, initial_paddle_y=0
 
 )(
-    input clk100Hz, reset, pause,
+    input clk100Hz, CLOCK_50, reset, pause,
     input btn_1_up, btn_1_down, btn_2_up, btn_2_down,
     
     output integer score_1_ones, score_1_tens, score_2_ones, score_2_tens,
