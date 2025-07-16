@@ -28,6 +28,9 @@ parameter BALL_SIZE=5;
 parameter initial_ball_x=mid_line_x;
 parameter initial_ball_y=mid_y-3 +disp_shift;
 
+reg[9:0] ball_x;
+reg[9:0] ball_y;
+
 //Ball speed
 parameter initial_dx=1;
 parameter initial_dy=1;
@@ -45,6 +48,12 @@ parameter paddle_2_x=630;
 parameter initial_paddle_dy = 3;
 parameter initial_paddle_y = 200 +disp_shift;
 
+reg [9:0] paddle_1_y;
+
+
+reg [9:0] paddle_2_y;
+
+
 //Paddle controls
 reg btn_1_down;
 reg btn_1_up;
@@ -60,6 +69,7 @@ debounce btn_deb_3(CLOCK_50, KEY[3], btn_1_up);
 
 //RESET
 wire reset = SW[17];
+wire pause = SW[0];
 
 
 //SCORES
@@ -81,7 +91,7 @@ state_machine sm(
 	paddle_1_x, paddle_2_x,
 	initial_paddle_dy, initial_paddle_y,
 
-	clk100Hz, reset, paddle_dy,
+	clk100Hz, reset, pause,
 	btn_1_up, btn_1_down, btn_2_up, btn_2_down,
 	
 	score_1_ones, score_1_tens, score_2_ones, score_2_tens,
