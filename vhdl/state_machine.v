@@ -66,7 +66,7 @@ reg [2:0] state = 3'b000;
 integer counter_score = 0;
 
 
-// State machine
+// STATE MACHINE
 always @ (posedge clk100Hz)
 begin
 if (reset) begin

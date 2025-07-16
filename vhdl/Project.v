@@ -49,10 +49,7 @@ parameter initial_paddle_dy = 3;
 parameter initial_paddle_y = 200 +disp_shift;
 
 reg [9:0] paddle_1_y;
-
-
 reg [9:0] paddle_2_y;
-
 
 //Paddle controls
 reg btn_1_down;
@@ -109,28 +106,19 @@ hexdisplay score_2_tens_disp(score_2_tens ,HEX5);
 
 
 //CLOCKS
-wire clk25, blank;
+// generate clock25MHz for display
+// generate clock100Hz for state machine
+reg clk25, clk100Hz;
 
-// Define 25 MHz clock
-reg clkdiv = 0;
-reg clk100Hz = 0;
-// Define 1s clock
-parameter COUNT_MAX = 250000;
-integer count = 0;
+generate_clocks clk_gen(
+	.CLOCK_50(CLOCK_50),
+	.clk25(clk25), .clk100Hz(clk100Hz)
+);
 
-always @(posedge CLOCK_50)
-begin
-	clkdiv <= ~clkdiv;
-	count <= count + 1;
-	if (count == COUNT_MAX) begin
-		count <= 0;
-		clk100Hz <= ~clk100Hz;
-	end
-end
-	
-assign clk25 = clkdiv;
 
+// VGA DISPLAY
 // VGA signals
+wire blank;
 assign VGA_CLK = clk25;
 assign VGA_BLANK = ~blank;
 
