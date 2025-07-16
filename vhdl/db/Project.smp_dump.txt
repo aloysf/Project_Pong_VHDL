@@ -1,5 +1,5 @@
 
-State Machine - |Project|state
+State Machine - |Project|state_machine:sm|state
 Name state.000 state.100 state.010 state.001 
 state.000 0 0 0 0 
 state.001 1 0 0 1 
