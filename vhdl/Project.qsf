@@ -479,4 +479,15 @@ set_global_assignment -name VERILOG_FILE score.v
 set_global_assignment -name VERILOG_FILE ps2_button_tracker.v
 set_global_assignment -name VERILOG_FILE random_number.v
 set_global_assignment -name QIP_FILE digit0.qip
+set_global_assignment -name VERILOG_FILE score_display.v
+set_global_assignment -name QIP_FILE digit1.qip
+set_global_assignment -name QIP_FILE digit2.qip
+set_global_assignment -name QIP_FILE digit3.qip
+set_global_assignment -name QIP_FILE digit4.qip
+set_global_assignment -name QIP_FILE digit5.qip
+set_global_assignment -name QIP_FILE digit6.qip
+set_global_assignment -name QIP_FILE digit7.qip
+set_global_assignment -name QIP_FILE digit8.qip
+set_global_assignment -name QIP_FILE digit9.qip
+set_global_assignment -name QIP_FILE digits.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

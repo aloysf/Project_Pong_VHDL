@@ -1,9 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Project">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Project|digit0:d0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_me81.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Project|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_1ch.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Project|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_1ch.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Project|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_5ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Project|score_display:sd_tens_1|digits:d|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rq91.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
