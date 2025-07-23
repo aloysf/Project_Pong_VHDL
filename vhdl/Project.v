@@ -151,6 +151,46 @@ always @ (posedge clk25) begin
 	VGA_R <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? R : 10'b0;
 	VGA_G <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? G : 10'b0;
 	VGA_B <= (~blank && (ball_on || paddle_1 || paddle_2 || middle_line)) ? B : 10'b0;
+	
+	VGA_R <= (~blank) ? R_tens_score_1 : 10'b0;
+	VGA_G <= (~blank) ? G_tens_score_1 : 10'b0;
+	VGA_B <= (~blank) ? B_tens_score_1 : 10'b0;
+	
+	VGA_R <= (~blank) ? R_ones_score_1 : 10'b0;
+	VGA_G <= (~blank) ? G_ones_score_1 : 10'b0;
+	VGA_B <= (~blank) ? B_ones_score_1 : 10'b0;
+	
+	VGA_R <= (~blank) ? R_tens_score_2 : 10'b0;
+	VGA_G <= (~blank) ? G_tens_score_2 : 10'b0;
+	VGA_B <= (~blank) ? B_tens_score_2 : 10'b0;
+	
+	VGA_R <= (~blank) ? R_ones_score_2 : 10'b0;
+	VGA_G <= (~blank) ? G_ones_score_2 : 10'b0;
+	VGA_B <= (~blank) ? B_ones_score_2 : 10'b0;
+	
 end
+
+parameter x_pos_tens_1 = mid_line_x-110;
+parameter x_pos_ones_1 = mid_line_x-65;
+parameter x_pos_tens_2 = mid_line_x+65;
+parameter x_pos_ones_2 = mid_line_x+110;
+
+parameter y_pos=10;
+
+wire [14:0] ram_addr_tens_1 = 55*(y-y_pos) + (x-x_pos_tens_1);
+wire [14:0] ram_addr_ones_1 = 55*(y-y_pos) + (x-x_pos_ones_1);
+wire [14:0] ram_addr_tens_2 = 55*(y-y_pos) + (x-x_pos_tens_2);
+wire [14:0] ram_addr_ones_2 = 55*(y-y_pos) + (x-x_pos_ones_2);
+
+wire [8:0] img0pixel;
+
+wire visible_rect = ((x>x_pos+1) && (x<x_pos+55+1)
+							&& (y > y_pos) && (y<y_pos+75));
+							
+							
+digit0 d0 (ram_addr[14:0], clk25, img0pixel);
+wire [8:0] pixel_out;
+assign pixel_out = (visible_rect && ram_addr<4125) ? img0pixel:9'b0;
+wire [9:0] R0 = {pixel_out[8:6], 7'b1};
 
 endmodule
